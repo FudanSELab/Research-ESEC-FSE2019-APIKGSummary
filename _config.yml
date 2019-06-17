@@ -1,6 +1,6 @@
-theme: jekyll-theme-architect
+theme: jekyll-theme-leap-day
 title: [APIKGSumm Replication Package]
 description: [the replication package for APIKGSumm]
-show_downloads: "false"
-is_user_page: "false"
+show_downloads: false
+is_user_page: false
 github.is_user_page: "false"
