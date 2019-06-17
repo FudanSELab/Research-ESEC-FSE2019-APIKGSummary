@@ -82,10 +82,10 @@ Summary for java.nio.file.Files
     - java.nio.file.Files.readAllBytes(java.nio.file.Path)
 		- Reads all the bytes from a file.
 		- Note that this method is intended for simple cases where it is convenient to read all bytes into a byte array.
-	- java.nio.file.Files.write(java.nio.file.Path,byte[],java.nio.file.OpenOption)
+	- java.nio.file.Files.write(java.nio.file.Path, byte[], java.nio.file.OpenOption)
 		- All bytes in the byte array are written to the file.
 		- Writes bytes to a file.
-	- java.nio.file.Files.copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption...)
+	- java.nio.file.Files.copy(java.io.InputStream, java.nio.file.Path, java.nio.file.CopyOption...)
 		- Copies all bytes from an input stream to a file.
 		- If an I/O error occurs reading from the input stream or writing to the file, then it may do so after the target file has been created and after some bytes have been read or written.
 
@@ -98,10 +98,10 @@ Summary for java.nio.file.Files
 	- java.nio.file.Files.probeContentType(java.nio.file.Path)
 		- Probes the content type of a file.
 		- If the file is recognized then the content type is returned.
-	- java.nio.file.Files.createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute<?>)
+	- java.nio.file.Files.createTempFile(java.nio.file.Path, java.lang.String, java.lang.String, java.nio.file.attribute.FileAttribute<?>)
 		- When no file attributes are specified, then the resulting file may have more restrictive access permissions to files created by the createTempFile(String, String, File) method.
 		- Where used as a work files, the resulting file may be opened using the DELETE_ON_CLOSE option so that the file is deleted when the appropriate close method is invoked.
-	- java.nio.file.Files.createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute<?>...)
+	- java.nio.file.Files.createTempFile(java.nio.file.Path, java.lang.String, java.lang.String, java.nio.file.attribute.FileAttribute<?>...)
 		- When no file attributes are specified, then the resulting file may have more restrictive access permissions to files created by the File.createTempFile(String,String,File) method.
 		- Creates a new empty file in the specified directory, using the given prefix and suffix strings to generate its name.
 
@@ -112,13 +112,13 @@ Summary for java.nio.file.Files
     - This class consists exclusively of static methods that operate on files, directories, or other types of files.
     - In most cases, the methods defined here will delegate to the associated file system provider to perform the file operations.
 - Methods:
-	- java.nio.file.Files.getOwner(java.nio.file.Path,java.nio.file.LinkOption...)
+	- java.nio.file.Files.getOwner(java.nio.file.Path, java.nio.file.LinkOption...)
 		- Returns the owner of a file.
 		- This file attribute view provides access to a file attribute that is the owner of the file.
-	- java.nio.file.Files.setOwner(java.nio.file.Path,java.nio.file.attribute.UserPrincipal)
+	- java.nio.file.Files.setOwner(java.nio.file.Path, java.nio.file.attribute.UserPrincipal)
 		- This file attribute view provides access to a file attribute that is the owner of the file.
 		- Updates the file owner.
-	- java.nio.file.Files.getOwner(java.nio.file.Path,java.nio.file.LinkOption)
+	- java.nio.file.Files.getOwner(java.nio.file.Path, java.nio.file.LinkOption)
 		- Returns the owner of a file.
 		- This file attribute view provides access to a file attribute that is the owner of the file.
 
@@ -149,10 +149,10 @@ Summary for java.nio.file.Files
 	- java.nio.file.Files.write(java.nio.file.Path, java.lang.Iterable<? extends java.lang.CharSequence>, java.nio.charset.Charset,java.nio.file.OpenOption...)
 		- Write lines of text to a file.
 		- Each line is a char sequence and is written to the file in sequence with each line terminated by the platform's line separator, as defined by the system property line.separator.
-	- java.nio.file.Files.readAllLines(java.nio.file.Path,java.nio.charset.Charset)
+	- java.nio.file.Files.readAllLines(java.nio.file.Path, java.nio.charset.Charset)
 		- Read all lines from a file.
 		- Note that this method is intended for simple cases where it is convenient to read all lines in a single operation.
-	- java.nio.file.Files.write(java.nio.file.Path,java.lang.Iterable<? extends java.lang.CharSequence>,java.nio.file.OpenOption)
+	- java.nio.file.Files.write(java.nio.file.Path, java.lang.Iterable<? extends java.lang.CharSequence>, java.nio.file.OpenOption)
 		- Write lines of text to a file.
 		- Characters are encoded into bytes using the UTF-8 charset.
 
@@ -163,13 +163,13 @@ Summary for java.nio.file.Files
     - In most cases, the methods defined here will delegate to the associated file system provider to perform the file operations.
     - This class consists exclusively of static methods that operate on files, directories, or other types of files.
 - Methods:
-	- java.nio.file.Files.getFileAttributeView(java.nio.file.Path,java.lang.Class<V>,java.nio.file.LinkOption...)
+	- java.nio.file.Files.getFileAttributeView(java.nio.file.Path, java.lang.Class<V>, java.nio.file.LinkOption...)
 		- The BasicFileAttributeView type supports access to the basic attributes of a file.
 		- This method is intended to be used where the file attribute view defines type-safe methods to read or update the file attributes.
-	- java.nio.file.Files.readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption...)
+	- java.nio.file.Files.readAttributes(java.nio.file.Path, java.lang.String, java.nio.file.LinkOption...)
 		- If not specified then it defaults to "basic", the name of the file attribute view that identifies the basic set of file attributes common to many file systems.
 		- The following examples demonstrate possible values for the attributes parameter: "*" Read all basic-file-attributes.
-	- java.nio.file.Files.getOwner(java.nio.file.Path,java.nio.file.LinkOption...)
+	- java.nio.file.Files.getOwner(java.nio.file.Path, java.nio.file.LinkOption...)
 		- This file attribute view provides access to a file attribute that is the owner of the file.
 		- The path parameter is associated with a file system that supports FileOwnerAttributeView.
 
@@ -180,12 +180,12 @@ Summary for java.nio.file.Files
     - This class consists exclusively of static methods that operate on files, directories, or other types of files.
     - In most cases, the methods defined here will delegate to the associated file system provider to perform the file operations.
 - Methods:
-	- java.nio.file.Files.walk(java.nio.file.Path,java.nio.file.FileVisitOption...)
+	- java.nio.file.Files.walk(java.nio.file.Path, java.nio.file.FileVisitOption...)
 		- Return a Stream that is lazily populated with Path by walking the file tree rooted at a given starting file.
 		- The file tree is traversed depth-first, the elements in the stream are Path objects that are obtained as if by resolving the relative path against start.
-	- java.nio.file.Files.walk(java.nio.file.Path,int,java.nio.file.FileVisitOption...)
+	- java.nio.file.Files.walk(java.nio.file.Path,int, java.nio.file.FileVisitOption...)
 		- Return a Stream that is lazily populated with Path by walking the file tree rooted at a given starting file.
 		- The Stream returned is guaranteed to have at least one element, the starting file itself.
-	- java.nio.file.Files.walk(java.nio.file.Path,int,java.nio.file.FileVisitOption)
+	- java.nio.file.Files.walk(java.nio.file.Path,int, java.nio.file.FileVisitOption)
 		- Return a Stream that is lazily populated with Path by walking the file tree rooted at a given starting file.
 		- The Stream returned is guaranteed to have at least one element, the starting file itself.
