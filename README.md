@@ -129,10 +129,10 @@ Summary for java.nio.file.Files
     - This class consists exclusively of static methods that operate on files, directories, or other types of files.
     - In most cases, the methods defined here will delegate to the associated file system provider to perform the file operations.
 - Methods:
-	- java.nio.file.Files.newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption...)
+	- java.nio.file.Files.newBufferedWriter(java.nio.file.Path, java.nio.file.OpenOption...)
 		The text is encoded into bytes for writing using the UTF-8 charset.
 		Opens or creates a file for writing, returning a BufferedWriter to write text to the file in an efficient manner.
-	- java.nio.file.Files.write(java.nio.file.Path,java.lang.Iterable<? extends java.lang.CharSequence>,java.nio.file.OpenOption...)
+	- java.nio.file.Files.write(java.nio.file.Path, java.lang.Iterable<? extends java.lang.CharSequence>, java.nio.file.OpenOption...)
 		Characters are encoded into bytes using the UTF-8 charset.
 		Write lines of text to a file.
 	- java.nio.file.Files.lines(java.nio.file.Path)
@@ -146,7 +146,7 @@ Summary for java.nio.file.Files
     - This class consists exclusively of static methods that operate on files, directories, or other types of files.
     - In most cases, the methods defined here will delegate to the associated file system provider to perform the file operations.
 - Methods:
-	- java.nio.file.Files.write(java.nio.file.Path,java.lang.Iterable<? extends java.lang.CharSequence>,java.nio.charset.Charset,java.nio.file.OpenOption...)
+	- java.nio.file.Files.write(java.nio.file.Path, java.lang.Iterable<? extends java.lang.CharSequence>, java.nio.charset.Charset,java.nio.file.OpenOption...)
 		- Write lines of text to a file.
 		- Each line is a char sequence and is written to the file in sequence with each line terminated by the platform's line separator, as defined by the system property line.separator.
 	- java.nio.file.Files.readAllLines(java.nio.file.Path,java.nio.charset.Charset)
