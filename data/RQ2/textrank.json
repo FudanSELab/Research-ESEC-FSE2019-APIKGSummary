@@ -1,0 +1,433 @@
+[
+  {
+    "query": "How do I efficiently iterate over each entry in a Java Map?",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "java.util.Map",
+        "class_id": 1826,
+        "summary_text": [
+          "For example, the specification for the containsKey(Object key) method says: \"returns true if and only if this map contains a mapping for a key k such that (key==null ?k==null : key.equals(k)).\"",
+          "More generally, attempting an operation on an ineligible key or value whose completion would not result in the insertion of an ineligible element into the map may throw an exception or it may succeed, at the option of the implementation.",
+          "If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null.",
+          "If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null.",
+          "For example, to either create or append a String msg to a value mapping: map.merge(key, msg, String::concat) If the remapping function returns null, the mapping is removed."
+        ]
+      },
+      {
+        "class_name": "java.util.Map.Entry",
+        "class_id": 1827,
+        "summary_text": [
+          "The returned comparator is serializable and throws NullPointerException when comparing an entry with null values.",
+          "The returned comparator is serializable and throws NullPointerException when comparing an entry with a null key.",
+          "Returns a comparator that compares Map.Entry in natural order on value.",
+          "Returns a comparator that compares Map.Entry in natural order on key.",
+          "More formally, two entries e1 and e2 represent the same mapping if (e1.getKey()==null ?"
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to split a string in Java",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "java.lang.String",
+        "class_id": 1017,
+        "summary_text": [
+          "If a character with value ch occurs in the character sequence represented by this String object, then the index (in Unicode code units) of the first such occurrence is returned.",
+          "Allocates a new String that contains characters from a subarray of the Unicode code point array argument.",
+          "A String object is returned, representing the substring of this string that begins with the character at index k and ends with the character at index m-that is, the result of this.substring(k, m + 1).",
+          "The array returned by this method contains each substring of this string that is terminated by another substring that matches the given expression or is terminated by the end of the string."
+        ]
+      },
+      {
+        "class_name": "java.util.StringTokenizer",
+        "class_id": 1911,
+        "summary_text": [
+          "First, the set of characters considered to be delimiters by this StringTokenizer object is changed to be the characters in the string delim.",
+          "The set of delimiters (the characters that separate tokens) may be specified either at creation time or on a per-token basis.",
+          "If the returnDelims flag is true, then the delimiter characters are also returned as tokens.",
+          "An instance of StringTokenizer behaves in one of two ways, depending on whether it was created with the returnDelims flag having the value true or false: If the flag is false, delimiter characters serve to separate tokens.",
+          "A StringTokenizer object internally maintains a current position within the string to be tokenized."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I create a file and write to it in Java?",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "java.io.PrintWriter",
+        "class_id": 950,
+        "summary_text": [
+          "The string produced by String.valueOf(long) is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write(int) method.",
+          "The string produced by String.valueOf(float) is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write(int) method.",
+          "The string produced by String.valueOf(double) is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write(int) method.",
+          "The string produced by the String.valueOf(Object) method is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write(int) method.",
+          "The string produced by String.valueOf(boolean) is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write(int) method."
+        ]
+      },
+      {
+        "class_name": "java.io.FileOutputStream",
+        "class_id": 925,
+        "summary_text": [
+          "First, if there is a security manager, its checkWrite method is called with the file descriptor fdObj argument as its argument.",
+          "Cleans up the connection to the file, and ensures that the close method of this file output stream is called when there are no more references to this stream.",
+          "Creates a file output stream to write to the specified file descriptor, which represents an existing connection to an actual file in the file system.",
+          "Creates a file output stream to write to the file represented by the specified File object.",
+          "Creates a file output stream to write to the file represented by the specified File object."
+        ]
+      },
+      {
+        "class_name": "java.nio.file.Files",
+        "class_id": 1342,
+        "summary_text": [
+          "Additionally, some operating systems may require that the Java virtual machine be started with implementation specific privileges to create symbolic links, in which case this method may throw IOException.",
+          "Additionally, some operating systems may require that the Java virtual machine be started with implementation specific privileges to create symbolic links, in which case this method may throw IOException.",
+          "Where it is required to distinguish an I/O exception from the case that the file is not a directory then the file attributes can be read with the readAttributes method and the file type tested with the BasicFileAttributes.isDirectory() method.",
+          "Where it is required to distinguish an I/O exception from the case that the file is not a symbolic link then the file attributes can be read with the readAttributes method and the file type tested with the BasicFileAttributes.isSymbolicLink() method.",
+          "This method creates a new directory entry for the file so that it can be accessed using link as the path."
+        ]
+      },
+      {
+        "class_name": "java.io.Writer",
+        "class_id": 961,
+        "summary_text": [
+          "Creates a new character-stream writer whose critical sections will synchronize on the given object.",
+          "An invocation of this method of the form out.append(csq) behaves in exactly the same way as the invocation out.write(csq.toString()) .",
+          "If the stream has saved any characters from the various write() methods in a buffer, write them immediately to their intended destination.",
+          "Then, if that destination is another character or byte stream, flush it.",
+          "Appends a subsequence of the specified character sequence to this writer."
+        ]
+      },
+      {
+        "class_name": "java.io.BufferedWriter",
+        "class_id": 914,
+        "summary_text": [
+          "If the requested length is at least as large as the buffer, however, then this method will flush the buffer and write the characters directly to the underlying stream.",
+          "Calling this method to terminate each output line is therefore preferred to writing a newline character directly.",
+          "Writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings.",
+          "Creates a buffered character-output stream that uses a default-sized output buffer.",
+          "Unless prompt output is required, it is advisable to wrap a BufferedWriter around any Writer whose write() operations may be costly, such as FileWriters and OutputStreamWriters."
+        ]
+      },
+      {
+        "class_name": "java.io.FileWriter",
+        "class_id": 928,
+        "summary_text": [
+          "Constructs a FileWriter object given a file name with a boolean indicating whether or not to append the data written.",
+          "Constructs a FileWriter object given a file name.",
+          "Convenience class for writing character files.",
+          "Constructs a FileWriter object associated with a file descriptor.",
+          "For writing streams of raw bytes, consider using a FileOutputStream."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to round a number to n decimal places in Java",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "java.text.DecimalFormat",
+        "class_id": 1726,
+        "summary_text": [
+          "For negative numbers, use a second pattern, separated by a semicolon Example \"#,#00.0#\" → 1,234.56 This means a minimum of 2 integer digits, 1 fraction digit, and a maximum of 2 fraction digits.",
+          "For negative numbers, use a second pattern, separated by a semicolon Example \"#,#00.0#\" → 1,234.56 This means a minimum of 2 integer digits, 1 fraction digit, and a maximum of 2 fraction digits.",
+          "Negative exponents are formatted using the localized minus sign, not the prefix and suffix from the pattern.",
+          "Digits For formatting, DecimalFormat uses the ten consecutive characters starting with the localized zero digit defined in the DecimalFormatSymbols object as digits.",
+          "Infinity is formatted as a string, which typically has a single character \\u221E, with the positive or negative prefixes and suffixes applied."
+        ]
+      },
+      {
+        "class_name": "java.lang.Math",
+        "class_id": 1004,
+        "summary_text": [
+          "If start is equal to ± Double.MAX_VALUE and direction has a value such that the result should have a larger magnitude, an infinity with same sign as start is returned.",
+          "If start is equal to ± Float.MAX_VALUE and direction has a value such that the result should have a larger magnitude, an infinity with same sign as start is returned.",
+          "If the first argument is positive zero and the second argument is negative, or the first argument is positive and finite and the second argument is negative infinity, then the result is the double value closest to pi.",
+          "If the first argument is positive and the second argument is positive zero or negative zero, or the first argument is positive infinity and the second argument is finite, then the result is the double value closest to pi/2.",
+          "If the first argument is negative and the second argument is positive zero or negative zero, or the first argument is negative infinity and the second argument is finite, then the result is the double value closest to -pi/2."
+        ]
+      },
+      {
+        "class_name": "java.math.BigDecimal",
+        "class_id": 1170,
+        "summary_text": [
+          "Note that if the result of this method is passed to the string constructor, only the numerical value of this BigDecimal will necessarily be recovered; the representation of the new BigDecimal may have a different scale.",
+          "Translates a character array representation of a BigDecimal into a BigDecimal, accepting the same sequence of characters as the BigDecimal(String) constructor, while allowing a sub-array to be specified and with rounding according to the context settings.",
+          "Translates a BigInteger unscaled value and an int scale into a BigDecimal, with rounding according to the context settings.",
+          "Note: This is generally the preferred way to convert a double (or float) into a BigDecimal, as the value returned is equal to that resulting from constructing a BigDecimal from the result of using Double.toString(double).",
+          "Translates a character array representation of a BigDecimal into a BigDecimal, accepting the same sequence of characters as the BigDecimal(String) constructor and with rounding according to the context settings."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How can I generate an MD5 hash?",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "java.security.MessageDigest",
+        "class_id": 1517,
+        "summary_text": [
+          "A new MessageDigest object encapsulating the MessageDigestSpi implementation from the first Provider that supports the specified algorithm is returned.",
+          "Returns a MessageDigest object that implements the specified digest algorithm.",
+          "Returns a MessageDigest object that implements the specified digest algorithm.",
+          "Returns a MessageDigest object that implements the specified digest algorithm.",
+          "Returns the length of the digest in bytes, or 0 if this operation is not supported by the provider and the implementation is not cloneable."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "File to byte[] in Java",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "java.io.File",
+        "class_id": 922,
+        "summary_text": [
+          "An abstract pathname has two components: An optional system-dependent prefix string, such as a disk-drive specifier, \"/\" for the UNIX root directory, or \"\\\\\\\\\" for a Microsoft Windows UNC pathname, and A sequence of zero or more string names.",
+          "If parent is the empty string then the new File instance is created by converting child into an abstract pathname and resolving the result against a system-dependent default directory.",
+          "Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter.",
+          "Otherwise, a pathname satisfies the filter if and only if the value true results when the FilenameFilter.accept(File, String) method of the filter is invoked on this abstract pathname and the name of a file or directory in the directory that it denotes."
+        ]
+      },
+      {
+        "class_name": "java.nio.file.Files",
+        "class_id": 1342,
+        "summary_text": [
+          "Additionally, some operating systems may require that the Java virtual machine be started with implementation specific privileges to create symbolic links, in which case this method may throw IOException.",
+          "Additionally, some operating systems may require that the Java virtual machine be started with implementation specific privileges to create symbolic links, in which case this method may throw IOException.",
+          "Where it is required to distinguish an I/O exception from the case that the file is not a symbolic link then the file attributes can be read with the readAttributes method and the file type tested with the BasicFileAttributes.isSymbolicLink() method.",
+          "Where it is required to distinguish an I/O exception from the case that the file is not a directory then the file attributes can be read with the readAttributes method and the file type tested with the BasicFileAttributes.isDirectory() method.",
+          "This method creates a new directory entry for the file so that it can be accessed using link as the path."
+        ]
+      },
+      {
+        "class_name": "java.io.RandomAccessFile",
+        "class_id": 953,
+        "summary_text": [
+          "This method reads a byte from this file, starting at the current file pointer, and returns that byte.",
+          "This method successively reads bytes from the file, starting at the current file pointer, until it reaches a line terminator or the end of the file.",
+          "Writes b.length bytes from the specified byte array to this file, starting at the current file pointer.",
+          "First, two bytes are written to the file, starting at the current file pointer, as if by the writeShort method giving the number of bytes to follow.",
+          "Reads b.length bytes from this file into the byte array, starting at the current file pointer."
+        ]
+      },
+      {
+        "class_name": "java.io.FileInputStream",
+        "class_id": 924,
+        "summary_text": [
+          "Returns an estimate of the number of remaining bytes that can be read (or skipped over) from this input stream without blocking by the next invocation of a method for this input stream.",
+          "If len is not zero, the method blocks until some input is available; otherwise, no bytes are read and 0 is returned.",
+          "The initial position of the returned channel will be equal to the number of bytes read from the file so far.",
+          "If there is a security manager, its checkRead method is called with the file descriptor fdObj as its argument to see if it's ok to read the file descriptor.",
+          "Skips over and discards n bytes of data from the input stream."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Close hide the Android Soft Keyboard",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "android.view.inputmethod.InputMethodManager",
+        "class_id": 7349,
+        "summary_text": [
+          "Returns true if the current IME needs to offer the users ways to switch to a next input method (e.g.a globe key.).",
+          "Synonym for showSoftInput(View, int, ResultReceiver) without a result receiver: explicitly request that the current input method's soft input area be shown to the user, if needed.",
+          "Return true if the given view is the currently active view for the input method.",
+          "Switch to a new input method subtype of the current input method.Requires the WRITE_SECURE_SETTINGS permission."
+        ]
+      },
+      {
+        "class_name": "android.view.WindowManager.LayoutParams",
+        "class_id": 7276,
+        "summary_text": [
+          "For example, if the object will include a file descriptor in the output of writeToParcel(Parcel, int), the return value of this method must include the CONTENTS_FILE_DESCRIPTOR bit.",
+          "Returns int a bitmask indicating the set of special object types marshaled by this Parcelable object instance.",
+          "Describe the kinds of special objects contained in this Parcelable instance's marshaled representation.",
+          "Returns a String representation of this set of layout parameters.",
+          "In particular, this checks the FLAG_NOT_FOCUSABLE and FLAG_ALT_FOCUSABLE_IM flags and returns true if the combination of the two corresponds to a window that needs to be behind the input method so that the user can type into it."
+        ]
+      },
+      {
+        "class_name": "android.view.WindowManager",
+        "class_id": 7203,
+        "summary_text": [
+          "Returns the Display upon which this WindowManager instance will create new windows.",
+          "To create windows on a different display, you need to obtain a WindowManager for that Display.",
+          "The returned display could instead be a secondary display that this window manager instance is managing.",
+          "Instances of this class must be obtained using Context.getSystemService(Class) with the argument WindowManager.class or Context.getSystemService(String) with the argument Context.WINDOW_SERVICE.",
+          "Think of it as the display that this WindowManager instance uses by default."
+        ]
+      },
+      {
+        "class_name": "android.view.Window",
+        "class_id": 7270,
+        "summary_text": [
+          "Related XML Attributes: android:windowSharedElementsUseOverlay Returns boolean true when shared elements should use an Overlay during shared element transitions or false when they should animate as part of the normal View hierarchy.",
+          "Related XML Attributes: android:windowAllowReturnTransitionOverlap Parameters allow boolean: true to start the transition when possible or false to wait until the called Activity's exiting transition completes.",
+          "Related XML Attributes: android:windowExitTransition Returns Transition the Transition to use to move Views out of the scene when calling a new Activity.",
+          "Related XML Attributes: android:windowAllowReturnTransitionOverlap Returns boolean true when the transition should start when possible or false when it should wait until the called Activity's exiting transition completes.",
+          "Related XML Attributes: android:windowExitTransition Parameters transition Transition: The Transition to use to move Views out of the scene when calling a new Activity."
+        ]
+      },
+      {
+        "class_name": "android.accessibilityservice.AccessibilityService.SoftKeyboardController",
+        "class_id": 4855,
+        "summary_text": [
+          "Adds the specified change listener to the list of soft keyboard show mode change listeners.",
+          "Removes the specified change listener from the list of keyboard show mode change listeners.",
+          "Adds the specified change listener to the list of show mode change listeners.",
+          "The callback will occur on the specified Handler's thread, or on the services's main thread if the handler is null.",
+          "An AccessibilityService can also request the show mode SHOW_MODE_HIDDEN, where the soft keyboard is never shown."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Download a file with Android, and showing the progress in a ProgressDialog",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "android.app.ProgressDialog",
+        "class_id": 5016,
+        "summary_text": [
+          "Returns int the current secondary progress, a value between 0 and getMax()",
+          "Parameter int diff: the amount by which the current secondary progress will be incremented, up to getMax()",
+          "Parameter int diff: the amount by which the current progress will be incremented, up to getMax()",
+          "In indeterminate mode, the progress is ignored and the dialog shows an infinite animation instead.",
+          "A dialog showing a progress indicator and an optional text message or view."
+        ]
+      },
+      {
+        "class_name": "android.app.DownloadManager",
+        "class_id": 4959,
+        "summary_text": [
+          "length long: length of the downloaded file showNotification boolean: true if a notification is to be sent, false otherwise Returns long an ID for the download entry added to the downloads app, unique across the system This ID is used to make future calls related to this download.",
+          "length long: length of the downloaded file showNotification boolean: true if a notification is to be sent, false otherwise uri Uri: the original HTTP URI of the download referer Uri: the HTTP Referer for the download Returns long an ID for the download entry added to the downloads app, unique across the system This ID is used to make future calls related to this download.",
+          "Returns String the media type of the given downloaded file id, if download was successful.",
+          "It makes the file visible in media managing applications such as Gallery App, which could be a useful purpose of using this API."
+        ]
+      },
+      {
+        "class_name": "android.app.DownloadManager.Request",
+        "class_id": 4961,
+        "summary_text": [
+          "Set a description of this download, to be displayed in notifications (if enabled) Parameters description CharSequence Returns DownloadManager.Request this object",
+          "Set the local destination for the downloaded file to a path within the public external storage directory (as returned by getExternalStoragePublicDirectory(String)).",
+          "Parameters title CharSequence Returns DownloadManager.Request this object",
+          "Note that the default download destination is a shared volume where the system might delete your file if it needs to reclaim space for system use.",
+          "Set the local destination for the downloaded file to a path within the application's external files directory (as returned by getExternalFilesDir(String)."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Get current time and date on Android",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "java.util.Calendar",
+        "class_id": 1860,
+        "summary_text": [
+          "The Calendar class is an abstract class that provides methods for converting between a specific instant in time and a set of calendar fields such as YEAR, MONTH, DAY_OF_MONTH, HOUR, and so on, and for manipulating the calendar fields, such as getting the date of the next week.",
+          "A Calendar implementation class may use the field's specific default value for date and time calculations.",
+          "A Calendar implementation class may use the field's specific default value for date and time calculations.",
+          "Unlike the set method, all of the calendar fields and time values are calculated upon return.",
+          "Returns a Date object representing this Calendar's time value (millisecond offset from the Epoch\")."
+        ]
+      },
+      {
+        "class_name": "android.text.format.Time",
+        "class_id": 6967,
+        "summary_text": [
+          "You should also use toMillis(false) if you want to read back the same milliseconds that you set with set(long) This method can return -1 when the date / time fields have been set to a local time that conflicts with available timezone information.",
+          "After this method returns all the fields will be normalized and the time will be set to 12am at the beginning of the given Julian day.",
+          "This method can return an incorrect answer when the date / time fields have been set to a local time that contradicts the available timezone information.",
+          "If \"ignoreDst\" is false, then this method uses the current setting of the \"isDst\" field and will adjust the returned time if the \"isDst\" field is wrong for the given time.",
+          "The current Time object must already be normalized because this method uses the yearDay and weekDay fields."
+        ]
+      },
+      {
+        "class_name": "java.text.SimpleDateFormat",
+        "class_id": 1738,
+        "summary_text": [
+          "SimpleDateFormat also supports localized date and time pattern strings.",
+          "Each of these class methods can return a date/time formatter initialized with a default format pattern.",
+          "Constructs a SimpleDateFormat using the given pattern and the default date format symbols for the default FORMAT locale.",
+          "Constructs a SimpleDateFormat using the given pattern and the default date format symbols for the given locale.",
+          "Applies the given localized pattern string to this date format."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I display an alert dialog on Android?",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "android.app.AlertDialog",
+        "class_id": 4945,
+        "summary_text": [
+          "Use setButton(int, CharSequence, android.content.DialogInterface.OnClickListener) with BUTTON_POSITIVE Set a listener to be invoked when button 3 of the dialog is pressed.",
+          "Use setButton(int, CharSequence, android.content.DialogInterface.OnClickListener) with BUTTON_POSITIVE Set a listener to be invoked when button 3 of the dialog is pressed.",
+          "Use setButton(int, CharSequence, android.content.DialogInterface.OnClickListener) with BUTTON_NEGATIVE Set a listener to be invoked when button 2 of the dialog is pressed.",
+          "Use setButton(int, CharSequence, Message) with BUTTON_POSITIVE.",
+          "Use setButton(int, CharSequence, Message) with BUTTON_NEGATIVE."
+        ]
+      },
+      {
+        "class_name": "android.app.Dialog",
+        "class_id": 4957,
+        "summary_text": [
+          "Called when a key shortcut event is not handled by any of the views in the Dialog.",
+          "Called when a generic motion event was not handled by any of the views inside of the dialog.",
+          "Parameter MotionEvent ev: The touch screen event.This value must never be null.",
+          "Parameter MotionEvent event: The touch screen event being processed.This value must never be null.",
+          "Returns boolean boolean Return true to finish processing of selection, or false to perform the normal menu handling (calling its Runnable or sending a Message to its target Handler)."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to convert a Drawable to a Bitmap?",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "android.graphics.drawable.BitmapDrawable",
+        "class_id": 5501,
+        "summary_text": [
+          "Use BitmapDrawable(android.content.res.Resources, android.graphics.Bitmap) instead to specify a bitmap to draw with and ensure the correct density is set.",
+          "Note that the returned value does not necessarily take into account a custom alpha or color filter that has been applied by the client through the setAlpha(int) or setColorFilter(ColorFilter) methods.",
+          "Use BitmapDrawable(Resources, Bitmap) to ensure that the drawable has correctly set its target density.",
+          "Create drawable from a bitmap, setting initial target density based on the display metrics of the resources.",
+          "Parameter boolean aa: True if the bitmap should be anti-aliased, false otherwise."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I center text horizontally and vertically in a TextView?",
+    "summary_way": "text_rank",
+    "summary": [
+      {
+        "class_name": "android.widget.TextView",
+        "class_id": 7579,
+        "summary_text": [
+          "Related XML Attributes: android:textIsSelectable Returns boolean True if the text displayed in this TextView can be selected by the user.",
+          "Related XML Attributes: android:autoSizeMaxTextSize Returns int the current auto-size maximum text size in pixels (the default is 112sp).",
+          "Related XML Attributes: android:autoSizeMinTextSize Returns int the current auto-size minimum text size in pixels (the default is 12sp).",
+          "Related XML Attributes: android:maxLines Returns int the maximum height of TextView in terms of number of lines.",
+          "Related XML Attributes: android:maxLines Parameters maxLines int: the maximum height of TextView in terms of number of lines See also:"
+        ]
+      }
+    ]
+  }
+]

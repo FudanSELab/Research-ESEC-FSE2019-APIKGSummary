@@ -1,0 +1,1748 @@
+[
+  {
+    "query": "How do I efficiently iterate over each entry in a Java Map?",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "java.util.Map",
+        "class_id": 1826,
+        "class_sentence": [
+          {
+            "sentence_text": "The order of a map is defined as the order in which the iterators on the map's collection views return their elements.",
+            "sentence_id": 352037
+          },
+          {
+            "sentence_text": "For example, invoking the putAll(Map) method on an unmodifiable map may, but is not required to, throw the exception if the map whose mappings are to be \"superimposed\" is empty.",
+            "sentence_id": 352048
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.util.Map.entrySet()",
+            "method_sentence": [
+              {
+                "sentence_text": "If the map is modified while an iteration over the set is in progress (except through the iterator's own remove operation, or through the setValue operation on a map entry returned by the iterator) the results of the iteration are undefined.",
+                "sentence_id": 396678
+              },
+              {
+                "sentence_text": "Returns a Set view of the mappings contained in this map.",
+                "sentence_id": 252964
+              }
+            ],
+            "method_id": 25632
+          },
+          {
+            "method_name": "java.util.Map.computeIfAbsent(K,java.util.function.Function<? super,? extends V>)",
+            "method_sentence": [
+              {
+                "sentence_text": "If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null.",
+                "sentence_id": 309561
+              },
+              {
+                "sentence_text": "If the mapping function returns null, no mapping is recorded.",
+                "sentence_id": 518044
+              }
+            ],
+            "method_id": 83250
+          },
+          {
+            "method_name": "java.util.Map.compute(K,java.util.function.BiFunction<? super,? super,? extends V>)",
+            "method_sentence": [
+              {
+                "sentence_text": "Attempts to compute a mapping for the specified key and its current mapped value (or null if there is no current mapping).",
+                "sentence_id": 309560
+              },
+              {
+                "sentence_text": "The remapping function should not modify this map during computation.",
+                "sentence_id": 518043
+              }
+            ],
+            "method_id": 83249
+          }
+        ]
+      },
+      {
+        "class_name": "java.util.Map.Entry",
+        "class_id": 1827,
+        "class_sentence": [
+          {
+            "sentence_text": "These Map.Entry objects are valid only for the duration of the iteration; more formally, the behavior of a map entry is undefined if the backing map has been modified after the entry was returned by the iterator, except through the setValue operation on the map entry.",
+            "sentence_id": 352067
+          },
+          {
+            "sentence_text": "The only way to obtain a reference to a map entry is from the iterator of this collection-view.",
+            "sentence_id": 352066
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.util.Map.Entry.equals(java.lang.Object)",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns true if the given object is also a map entry and the two entries represent the same mapping.",
+                "sentence_id": 396721
+              },
+              {
+                "sentence_text": "This ensures that the equals method works properly across different implementations of the Map.Entry interface.",
+                "sentence_id": 396725
+              }
+            ],
+            "method_id": 25655
+          },
+          {
+            "method_name": "java.util.Map.Entry.setValue(java.util.Map.Entry)",
+            "method_sentence": [
+              {
+                "sentence_text": "(Writes through to the map.)",
+                "sentence_id": 396731
+              },
+              {
+                "sentence_text": "The behavior of this call is undefined if the mapping has already been removed from the map (by the iterator's remove operation).",
+                "sentence_id": 396732
+              }
+            ],
+            "method_id": 25659
+          },
+          {
+            "method_name": "java.util.Map.Entry.setValue(V)",
+            "method_sentence": [
+              {
+                "sentence_text": "(Writes through to the map.)",
+                "sentence_id": 518065
+              },
+              {
+                "sentence_text": "The behavior of this call is undefined if the mapping has already been removed from the map (by the iterator's remove operation).",
+                "sentence_id": 518066
+              }
+            ],
+            "method_id": 83260
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to split a string in Java",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "java.lang.String",
+        "class_id": 1017,
+        "class_sentence": [
+          {
+            "sentence_text": "All string literals in Java programs, such as \"abc\", are implemented as instances of this class.",
+            "sentence_id": 346608
+          },
+          {
+            "sentence_text": "The Java language provides special support for the string concatenation operator ( + ), and for conversion of other objects to strings.",
+            "sentence_id": 346617
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.lang.String.intern()",
+            "method_sentence": [
+              {
+                "sentence_text": "String literals are defined in section 3.10.5 of the The Java\u2122 Language Specification.",
+                "sentence_id": 380295
+              },
+              {
+                "sentence_text": "Otherwise, this String object is added to the pool and a reference to this String object is returned.",
+                "sentence_id": 380292
+              }
+            ],
+            "method_id": 17675
+          },
+          {
+            "method_name": "java.lang.String.join(java.lang.CharSequence,java.lang.CharSequence...)",
+            "method_sentence": [
+              {
+                "sentence_text": "For example, String message = String.join(\"-\", \"Java\", \"is\", \"cool\"); // message returned is: \"Java-is-cool\" .",
+                "sentence_id": 380296
+              }
+            ],
+            "method_id": 17677
+          },
+          {
+            "method_name": "java.lang.String.split(java.lang.String)",
+            "method_sentence": [
+              {
+                "sentence_text": "Splits this string around matches of the given regular expression.",
+                "sentence_id": 245037
+              },
+              {
+                "sentence_text": "This method works as if by invoking the two-argument split method with the given expression and a limit argument of zero.",
+                "sentence_id": 380352
+              }
+            ],
+            "method_id": 17693
+          }
+        ]
+      },
+      {
+        "class_name": "java.util.StringTokenizer",
+        "class_id": 1911,
+        "class_sentence": [
+          {
+            "sentence_text": "The string tokenizer class allows an application to break a string into tokens.",
+            "sentence_id": 233765
+          },
+          {
+            "sentence_text": "It is recommended that anyone seeking this functionality use the split method of String or the java.util.regex package instead.",
+            "sentence_id": 353796
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.util.StringTokenizer.nextElement()",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns the same value as the nextToken method, except that its declared return value is Object rather than String.",
+                "sentence_id": 254471
+              }
+            ],
+            "method_id": 27139
+          },
+          {
+            "method_name": "java.util.StringTokenizer.StringTokenizer(java.lang.String,java.lang.String)",
+            "method_sentence": [
+              {
+                "sentence_text": "Constructs a string tokenizer for the specified string.",
+                "sentence_id": 254466
+              }
+            ],
+            "method_id": 27134
+          },
+          {
+            "method_name": "java.util.StringTokenizer.hasMoreElements()",
+            "method_sentence": [
+              {
+                "sentence_text": "It exists so that this class can implement the Enumeration interface.",
+                "sentence_id": 399581
+              }
+            ],
+            "method_id": 27137
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I create a file and write to it in Java?",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "java.io.PrintWriter",
+        "class_id": 950,
+        "class_sentence": [
+          {
+            "sentence_text": "It does not contain methods for writing raw bytes, for which a program should use unencoded byte streams.",
+            "sentence_id": 346189
+          },
+          {
+            "sentence_text": "Prints formatted representations of objects to a text-output stream.",
+            "sentence_id": 232804
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.PrintWriter.PrintWriter(java.io.File)",
+            "method_sentence": [
+              {
+                "sentence_text": "This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the default charset for this instance of the Java virtual machine.",
+                "sentence_id": 377712
+              },
+              {
+                "sentence_text": "Creates a new PrintWriter, without automatic line flushing, with the specified file.",
+                "sentence_id": 243536
+              }
+            ],
+            "method_id": 16307
+          },
+          {
+            "method_name": "java.io.PrintWriter.PrintWriter(java.lang.String)",
+            "method_sentence": [
+              {
+                "sentence_text": "This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the default charset for this instance of the Java virtual machine.",
+                "sentence_id": 377710
+              },
+              {
+                "sentence_text": "Creates a new PrintWriter, without automatic line flushing, with the specified file name.",
+                "sentence_id": 243534
+              }
+            ],
+            "method_id": 16305
+          },
+          {
+            "method_name": "java.io.PrintWriter.write(java.lang.String,int,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Writes a portion of a string.",
+                "sentence_id": 243572
+              }
+            ],
+            "method_id": 16343
+          }
+        ]
+      },
+      {
+        "class_name": "java.io.FileOutputStream",
+        "class_id": 925,
+        "class_sentence": [
+          {
+            "sentence_text": "Some platforms, in particular, allow a file to be opened for writing by only one FileOutputStream (or other file-writing object) at a time.",
+            "sentence_id": 346003
+          },
+          {
+            "sentence_text": "Whether or not a file is available or may be created depends upon the underlying platform.",
+            "sentence_id": 346002
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.FileOutputStream.FileOutputStream(java.io.File)",
+            "method_sentence": [
+              {
+                "sentence_text": "Creates a file output stream to write to the file represented by the specified File object.",
+                "sentence_id": 243213
+              },
+              {
+                "sentence_text": "If the file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason then a FileNotFoundException is thrown.",
+                "sentence_id": 377323
+              }
+            ],
+            "method_id": 16000
+          },
+          {
+            "method_name": "java.io.FileOutputStream.FileOutputStream(java.io.File,boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "Creates a file output stream to write to the file represented by the specified File object.",
+                "sentence_id": 243214
+              },
+              {
+                "sentence_text": "If the file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason then a FileNotFoundException is thrown.",
+                "sentence_id": 377327
+              }
+            ],
+            "method_id": 16001
+          },
+          {
+            "method_name": "java.io.FileOutputStream.FileOutputStream(java.lang.String,boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "Creates a file output stream to write to the file with the specified name.",
+                "sentence_id": 243212
+              },
+              {
+                "sentence_text": "If the file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason then a FileNotFoundException is thrown.",
+                "sentence_id": 377320
+              }
+            ],
+            "method_id": 15999
+          }
+        ]
+      },
+      {
+        "class_name": "java.nio.file.Files",
+        "class_id": 1342,
+        "class_sentence": [
+          {
+            "sentence_text": "This class consists exclusively of static methods that operate on files, directories, or other types of files.",
+            "sentence_id": 233196
+          },
+          {
+            "sentence_text": "In most cases, the methods defined here will delegate to the associated file system provider to perform the file operations.",
+            "sentence_id": 348976
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.nio.file.Files.newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption...)",
+            "method_sentence": [
+              {
+                "sentence_text": "Opens or creates a file for writing, returning a BufferedWriter that may be used to write text to the file in an efficient manner.",
+                "sentence_id": 247848
+              },
+              {
+                "sentence_text": "In other words, it opens the file for writing, creating the file if it doesn't exist, or initially truncating an existing regular-file to a size of 0 if it exists.",
+                "sentence_id": 385879
+              }
+            ],
+            "method_id": 20501
+          },
+          {
+            "method_name": "java.nio.file.Files.newOutputStream(java.nio.file.Path,java.nio.file.OpenOption)",
+            "method_sentence": [
+              {
+                "sentence_text": "Opens or creates a file, returning an output stream that may be used to write bytes to the file.",
+                "sentence_id": 309427
+              },
+              {
+                "sentence_text": "In other words, it opens the file for writing, creating the file if it doesn't exist, or initially truncating an existing regular-file to a size of 0 if it exists.",
+                "sentence_id": 517211
+              }
+            ],
+            "method_id": 83116
+          },
+          {
+            "method_name": "java.nio.file.Files.newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption)",
+            "method_sentence": [
+              {
+                "sentence_text": "Opens or creates a file for writing, returning a BufferedWriter that may be used to write text to the file in an efficient manner.",
+                "sentence_id": 309423
+              },
+              {
+                "sentence_text": "In other words, it opens the file for writing, creating the file if it doesn't exist, or initially truncating an existing regular-file to a size of 0 if it exists.",
+                "sentence_id": 517160
+              }
+            ],
+            "method_id": 83112
+          }
+        ]
+      },
+      {
+        "class_name": "java.io.Writer",
+        "class_id": 961,
+        "class_sentence": [
+          {
+            "sentence_text": "Abstract class for writing to character streams.",
+            "sentence_id": 232815
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.Writer.write(java.lang.String)",
+            "method_sentence": [
+              {
+                "sentence_text": "Writes a string.",
+                "sentence_id": 243751
+              }
+            ],
+            "method_id": 16502
+          },
+          {
+            "method_name": "java.io.Writer.write(java.lang.String,int,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Writes a portion of a string.",
+                "sentence_id": 243752
+              }
+            ],
+            "method_id": 16503
+          },
+          {
+            "method_name": "java.io.Writer.flush()",
+            "method_sentence": [
+              {
+                "sentence_text": "If the intended destination of this stream is an abstraction provided by the underlying operating system, for example a file, then flushing the stream guarantees only that bytes previously written to the stream are passed to the operating system for writing; it does not guarantee that they are actually written to a physical device such as a disk drive.",
+                "sentence_id": 378001
+              },
+              {
+                "sentence_text": "If the stream has saved any characters from the various write() methods in a buffer, write them immediately to their intended destination.",
+                "sentence_id": 377998
+              }
+            ],
+            "method_id": 16498
+          }
+        ]
+      },
+      {
+        "class_name": "java.io.BufferedWriter",
+        "class_id": 914,
+        "class_sentence": [
+          {
+            "sentence_text": "Without buffering, each invocation of a print() method would cause characters to be converted into bytes that would then be written immediately to the file, which can be very inefficient.",
+            "sentence_id": 345930
+          },
+          {
+            "sentence_text": "Writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings.",
+            "sentence_id": 232768
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.BufferedWriter.write(java.lang.String,int,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Writes a portion of a String.",
+                "sentence_id": 243010
+              }
+            ],
+            "method_id": 15817
+          },
+          {
+            "method_name": "java.io.BufferedWriter.write(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Writes a single character.",
+                "sentence_id": 243008
+              }
+            ],
+            "method_id": 15815
+          },
+          {
+            "method_name": "java.io.BufferedWriter.write(char[],int,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "If the requested length is at least as large as the buffer, however, then this method will flush the buffer and write the characters directly to the underlying stream.",
+                "sentence_id": 376954
+              },
+              {
+                "sentence_text": "Writes a portion of an array of characters.",
+                "sentence_id": 243009
+              }
+            ],
+            "method_id": 15816
+          }
+        ]
+      },
+      {
+        "class_name": "java.io.FileWriter",
+        "class_id": 928,
+        "class_sentence": [
+          {
+            "sentence_text": "Some platforms, in particular, allow a file to be opened for writing by only one FileWriter (or other file-writing object) at a time.",
+            "sentence_id": 346037
+          },
+          {
+            "sentence_text": "Convenience class for writing character files.",
+            "sentence_id": 232782
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.FileWriter.FileWriter(java.io.File,boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "Constructs a FileWriter object given a File object.",
+                "sentence_id": 243235
+              },
+              {
+                "sentence_text": "If the second argument is true, then bytes will be written to the end of the file rather than the beginning.",
+                "sentence_id": 377354
+              }
+            ],
+            "method_id": 16022
+          },
+          {
+            "method_name": "java.io.FileWriter.FileWriter(java.io.File)",
+            "method_sentence": [
+              {
+                "sentence_text": "Constructs a FileWriter object given a File object.",
+                "sentence_id": 243234
+              }
+            ],
+            "method_id": 16021
+          },
+          {
+            "method_name": "java.io.FileWriter.FileWriter(java.lang.String,boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "Constructs a FileWriter object given a file name with a boolean indicating whether or not to append the data written.",
+                "sentence_id": 243233
+              }
+            ],
+            "method_id": 16020
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to round a number to n decimal places in Java",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "java.text.DecimalFormat",
+        "class_id": 1726,
+        "class_sentence": [
+          {
+            "sentence_text": "The minimum and maximum number of integer digits are interpreted together: If the maximum number of integer digits is greater than their minimum number and greater than 1, it forces the exponent to be a multiple of the maximum number of integer digits, and the minimum number of integer digits to be interpreted as 1.",
+            "sentence_id": 350806
+          },
+          {
+            "sentence_text": "To show all digits, set the significant digits count to zero.",
+            "sentence_id": 350813
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.text.DecimalFormat.setMinimumIntegerDigits(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the minimum number of digits allowed in the integer portion of a number.",
+                "sentence_id": 251100
+              },
+              {
+                "sentence_text": "For formatting numbers other than BigInteger and BigDecimal objects, the lower of newValue and 309 is used.",
+                "sentence_id": 390614
+              }
+            ],
+            "method_id": 23768
+          },
+          {
+            "method_name": "java.text.DecimalFormat.setMaximumIntegerDigits(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the maximum number of digits allowed in the integer portion of a number.",
+                "sentence_id": 251098
+              },
+              {
+                "sentence_text": "For formatting numbers other than BigInteger and BigDecimal objects, the lower of newValue and 309 is used.",
+                "sentence_id": 390610
+              }
+            ],
+            "method_id": 23766
+          },
+          {
+            "method_name": "java.text.DecimalFormat.getMinimumIntegerDigits()",
+            "method_sentence": [
+              {
+                "sentence_text": "Gets the minimum number of digits allowed in the integer portion of a number.",
+                "sentence_id": 251081
+              },
+              {
+                "sentence_text": "For formatting numbers other than BigInteger and BigDecimal objects, the lower of the return value and 309 is used.",
+                "sentence_id": 390577
+              }
+            ],
+            "method_id": 23749
+          }
+        ]
+      },
+      {
+        "class_name": "java.lang.Math",
+        "class_id": 1004,
+        "class_sentence": [
+          {
+            "sentence_text": "If a method always has an error less than 0.5 ulps, the method always returns the floating-point number nearest the exact result; such a method is correctly rounded.",
+            "sentence_id": 346401
+          },
+          {
+            "sentence_text": "Informally, with a 1 ulp error bound, when the exact result is a representable number, the exact result should be returned as the computed result; otherwise, either of the two floating-point values which bracket the exact result may be returned.",
+            "sentence_id": 346404
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.lang.Math.floorDiv(int,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "The floor rounding mode gives different results than truncation when the exact result is negative.",
+                "sentence_id": 379235
+              },
+              {
+                "sentence_text": "Normal integer division operates under the round to zero rounding mode (truncation).",
+                "sentence_id": 379233
+              }
+            ],
+            "method_id": 17323
+          },
+          {
+            "method_name": "java.lang.Math.floorDiv(long,long)",
+            "method_sentence": [
+              {
+                "sentence_text": "Normal integer division operates under the round to zero rounding mode (truncation).",
+                "sentence_id": 379241
+              },
+              {
+                "sentence_text": "The floor rounding mode gives different results than truncation when the exact result is negative.",
+                "sentence_id": 379243
+              }
+            ],
+            "method_id": 17324
+          },
+          {
+            "method_name": "java.lang.Math.round(double)",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns the closest long to the argument, with ties rounding to positive infinity.",
+                "sentence_id": 244686
+              },
+              {
+                "sentence_text": "If the argument is positive infinity or any value greater than or equal to the value of Long.MAX_VALUE, the result is equal to the value of Long.MAX_VALUE.",
+                "sentence_id": 379369
+              }
+            ],
+            "method_id": 17358
+          }
+        ]
+      },
+      {
+        "class_name": "java.math.BigDecimal",
+        "class_id": 1170,
+        "class_sentence": [
+          {
+            "sentence_text": "For example, rounding the value 999.9 to three digits rounding up would be numerically equal to one thousand, represented as 100\u00d7101.",
+            "sentence_id": 347625
+          },
+          {
+            "sentence_text": "If zero or positive, the scale is the number of digits to the right of the decimal point.",
+            "sentence_id": 347599
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.math.BigDecimal.movePointRight(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns a BigDecimal which is equivalent to this one with the decimal point moved n places to the right.",
+                "sentence_id": 246272
+              },
+              {
+                "sentence_text": "If n is non-negative, the call merely subtracts n from the scale.",
+                "sentence_id": 382561
+              }
+            ],
+            "method_id": 18912
+          },
+          {
+            "method_name": "java.math.BigDecimal.movePointLeft(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns a BigDecimal which is equivalent to this one with the decimal point moved n places to the left.",
+                "sentence_id": 246271
+              },
+              {
+                "sentence_text": "If n is non-negative, the call merely adds n to the scale.",
+                "sentence_id": 382558
+              }
+            ],
+            "method_id": 18911
+          },
+          {
+            "method_name": "java.math.BigDecimal.scale()",
+            "method_sentence": [
+              {
+                "sentence_text": "If zero or positive, the scale is the number of digits to the right of the decimal point.",
+                "sentence_id": 382586
+              },
+              {
+                "sentence_text": "If negative, the unscaled value of the number is multiplied by ten to the power of the negation of the scale.",
+                "sentence_id": 382587
+              }
+            ],
+            "method_id": 18925
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How can I generate an MD5 hash?",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "java.security.MessageDigest",
+        "class_id": 1517,
+        "class_sentence": [
+          {
+            "sentence_text": "Message digests are secure one-way hash functions that take arbitrary-sized data and output a fixed-length hash value.",
+            "sentence_id": 349624
+          },
+          {
+            "sentence_text": "This MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256.",
+            "sentence_id": 233371
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.security.MessageDigest.digest()",
+            "method_sentence": [
+              {
+                "sentence_text": "The digest is reset after this call is made.",
+                "sentence_id": 387135
+              },
+              {
+                "sentence_text": "Completes the hash computation by performing final operations such as padding.",
+                "sentence_id": 248699
+              }
+            ],
+            "method_id": 21359
+          },
+          {
+            "method_name": "java.security.MessageDigest.isEqual(byte[],byte[])",
+            "method_sentence": [
+              {
+                "sentence_text": "Compares two digests for equality.",
+                "sentence_id": 248708
+              },
+              {
+                "sentence_text": "Does a simple byte compare.",
+                "sentence_id": 387148
+              }
+            ],
+            "method_id": 21368
+          },
+          {
+            "method_name": "java.security.MessageDigest.digest(byte[],int,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "The digest is reset after this call is made.",
+                "sentence_id": 387136
+              },
+              {
+                "sentence_text": "Completes the hash computation by performing final operations such as padding.",
+                "sentence_id": 248700
+              }
+            ],
+            "method_id": 21360
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "File to byte[] in Java",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "java.io.File",
+        "class_id": 922,
+        "class_sentence": [
+          {
+            "sentence_text": "Interoperability with java.nio.file package The java.nio.file package defines interfaces and classes for the Java virtual machine to access files, file attributes, and file systems.",
+            "sentence_id": 345993
+          },
+          {
+            "sentence_text": "This directory is named by the system property user.dir, and is typically the directory in which the Java virtual machine was invoked.",
+            "sentence_id": 345971
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.File.canRead()",
+            "method_sentence": [
+              {
+                "sentence_text": "On some platforms it may be possible to start the Java virtual machine with special privileges that allow it to read files that are marked as unreadable.",
+                "sentence_id": 377112
+              },
+              {
+                "sentence_text": "Consequently this method may return true even though the file does not have read permissions.",
+                "sentence_id": 377113
+              }
+            ],
+            "method_id": 15931
+          },
+          {
+            "method_name": "java.io.File.setReadOnly()",
+            "method_sentence": [
+              {
+                "sentence_text": "On some platforms it may be possible to start the Java virtual machine with special privileges that allow it to modify files that are marked read-only.",
+                "sentence_id": 377254
+              },
+              {
+                "sentence_text": "Whether or not a read-only file or directory may be deleted depends upon the underlying system.",
+                "sentence_id": 377255
+              }
+            ],
+            "method_id": 15973
+          },
+          {
+            "method_name": "java.io.File.canWrite()",
+            "method_sentence": [
+              {
+                "sentence_text": "On some platforms it may be possible to start the Java virtual machine with special privileges that allow it to modify files that are marked read-only.",
+                "sentence_id": 377114
+              },
+              {
+                "sentence_text": "Consequently this method may return true even though the file is marked read-only.",
+                "sentence_id": 377115
+              }
+            ],
+            "method_id": 15932
+          }
+        ]
+      },
+      {
+        "class_name": "java.nio.file.Files",
+        "class_id": 1342,
+        "class_sentence": [
+          {
+            "sentence_text": "This class consists exclusively of static methods that operate on files, directories, or other types of files.",
+            "sentence_id": 233196
+          },
+          {
+            "sentence_text": "In most cases, the methods defined here will delegate to the associated file system provider to perform the file operations.",
+            "sentence_id": 348976
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.nio.file.Files.write(java.nio.file.Path,byte[],java.nio.file.OpenOption)",
+            "method_sentence": [
+              {
+                "sentence_text": "All bytes in the byte array are written to the file.",
+                "sentence_id": 517297
+              },
+              {
+                "sentence_text": "Writes bytes to a file.",
+                "sentence_id": 309435
+              }
+            ],
+            "method_id": 83124
+          },
+          {
+            "method_name": "java.nio.file.Files.readAllBytes(java.nio.file.Path)",
+            "method_sentence": [
+              {
+                "sentence_text": "Reads all the bytes from a file.",
+                "sentence_id": 247859
+              },
+              {
+                "sentence_text": "Note that this method is intended for simple cases where it is convenient to read all bytes into a byte array.",
+                "sentence_id": 385967
+              }
+            ],
+            "method_id": 20512
+          },
+          {
+            "method_name": "java.nio.file.Files.write(java.nio.file.Path,byte[],java.nio.file.OpenOption...)",
+            "method_sentence": [
+              {
+                "sentence_text": "All bytes in the byte array are written to the file.",
+                "sentence_id": 386081
+              },
+              {
+                "sentence_text": "Writes bytes to a file.",
+                "sentence_id": 247874
+              }
+            ],
+            "method_id": 20527
+          }
+        ]
+      },
+      {
+        "class_name": "java.io.RandomAccessFile",
+        "class_id": 953,
+        "class_sentence": [
+          {
+            "sentence_text": "If the random access file is created in read/write mode, then output operations are also available; output operations write bytes starting at the file pointer and advance the file pointer past the bytes written.",
+            "sentence_id": 346198
+          },
+          {
+            "sentence_text": "A random access file behaves like a large array of bytes stored in the file system.",
+            "sentence_id": 346196
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.RandomAccessFile.readUnsignedByte()",
+            "method_sentence": [
+              {
+                "sentence_text": "This method reads a byte from this file, starting at the current file pointer, and returns that byte.",
+                "sentence_id": 377850
+              },
+              {
+                "sentence_text": "Reads an unsigned eight-bit number from this file.",
+                "sentence_id": 243623
+              }
+            ],
+            "method_id": 16394
+          },
+          {
+            "method_name": "java.io.RandomAccessFile.writeLong(long)",
+            "method_sentence": [
+              {
+                "sentence_text": "Writes a long to the file as eight bytes, high byte first.",
+                "sentence_id": 243640
+              },
+              {
+                "sentence_text": "The write starts at the current position of the file pointer.",
+                "sentence_id": 377884
+              }
+            ],
+            "method_id": 16411
+          },
+          {
+            "method_name": "java.io.RandomAccessFile.writeByte(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Writes a byte to the file as a one-byte value.",
+                "sentence_id": 243633
+              },
+              {
+                "sentence_text": "The write starts at the current position of the file pointer.",
+                "sentence_id": 377875
+              }
+            ],
+            "method_id": 16404
+          }
+        ]
+      },
+      {
+        "class_name": "java.io.FileInputStream",
+        "class_id": 924,
+        "class_sentence": [
+          {
+            "sentence_text": "A FileInputStream obtains input bytes from a file in a file system.",
+            "sentence_id": 232778
+          },
+          {
+            "sentence_text": "FileInputStream is meant for reading streams of raw bytes such as image data.",
+            "sentence_id": 346000
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.io.FileInputStream.read(byte[])",
+            "method_sentence": [
+              {
+                "sentence_text": "Reads up to b.length bytes of data from this input stream into an array of bytes.",
+                "sentence_id": 243208
+              }
+            ],
+            "method_id": 15995
+          },
+          {
+            "method_name": "java.io.FileInputStream.read()",
+            "method_sentence": [
+              {
+                "sentence_text": "Reads a byte of data from this input stream.",
+                "sentence_id": 243207
+              },
+              {
+                "sentence_text": "This method blocks if no input is yet available.",
+                "sentence_id": 377302
+              }
+            ],
+            "method_id": 15994
+          },
+          {
+            "method_name": "java.io.FileInputStream.FileInputStream(java.io.File)",
+            "method_sentence": [
+              {
+                "sentence_text": "If the named file does not exist, is a directory rather than a regular file, or for some other reason cannot be opened for reading then a FileNotFoundException is thrown.",
+                "sentence_id": 377288
+              },
+              {
+                "sentence_text": "A new FileDescriptor object is created to represent this file connection.",
+                "sentence_id": 377286
+              }
+            ],
+            "method_id": 15987
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Close hide the Android Soft Keyboard",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "android.view.inputmethod.InputMethodManager",
+        "class_id": 7349,
+        "class_sentence": [
+          {
+            "sentence_text": "An IME, on the other hand, is allowed to programmatically switch the system to another IME, since it already has full control of user input.",
+            "sentence_id": 436436
+          },
+          {
+            "sentence_text": "This is enforced by making all clients inactive while the screen is off, and prevents bad IMEs from driving the UI when the user can not be aware of its behavior.",
+            "sentence_id": 436433
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.view.inputmethod.InputMethodManager.showSoftInput(android.view.View,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Parameter View view: The currently focused view, which would like to receive soft keyboard input.",
+                "sentence_id": 508460
+              },
+              {
+                "sentence_text": "Synonym for showSoftInput(View, int, ResultReceiver) without a result receiver: explicitly request that the current input method's soft input area be shown to the user, if needed.",
+                "sentence_id": 305901
+              }
+            ],
+            "method_id": 79546
+          },
+          {
+            "method_name": "android.view.inputmethod.InputMethodManager.hideSoftInputFromInputMethod(android.os.IBinder,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Close/hide the input method's soft input area, so the user no longer sees it or can interact with it.",
+                "sentence_id": 305883
+              }
+            ],
+            "method_id": 79527
+          },
+          {
+            "method_name": "android.view.inputmethod.InputMethodManager.shouldOfferSwitchingToNextInputMethod(android.os.IBinder)",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns true if the current IME needs to offer the users ways to switch to a next input method (e.g.a globe key.).",
+                "sentence_id": 305898
+              },
+              {
+                "sentence_text": "When an IME sets supportsSwitchingToNextInputMethod and this method returns true, the IME has to offer ways to to invoke switchToNextInputMethod(IBinder, boolean) accordingly.",
+                "sentence_id": 508444
+              }
+            ],
+            "method_id": 79542
+          }
+        ]
+      },
+      {
+        "class_name": "android.view.Window",
+        "class_id": 7270,
+        "class_sentence": [
+          {
+            "sentence_text": "It provides standard UI policies such as a background, title area, default key processing, etc.",
+            "sentence_id": 435961
+          },
+          {
+            "sentence_text": "An instance of this class should be used as the top-level view added to the window manager.",
+            "sentence_id": 435960
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.view.Window.hasSoftInputMode()",
+            "method_sentence": [
+              {
+                "sentence_text": "Has the app specified their own soft input mode?",
+                "sentence_id": 305101
+              }
+            ],
+            "method_id": 78719
+          },
+          {
+            "method_name": "android.view.Window.setSoftInputMode(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Specify an explicit soft input mode to use for the window, as per WindowManager.LayoutParams.softInputMode.",
+                "sentence_id": 305075
+              },
+              {
+                "sentence_text": "Providing anything besides \"unspecified\" here will override the input mode the window would normally retrieve from its theme.",
+                "sentence_id": 506138
+              }
+            ],
+            "method_id": 78693
+          },
+          {
+            "method_name": "android.view.Window.setLocalFocus(boolean,boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "inTouchMode boolean: Whether this window is in touch mode or not.",
+                "sentence_id": 506094
+              },
+              {
+                "sentence_text": "Parameter boolean hasFocus: Whether this window has focus or not.",
+                "sentence_id": 506093
+              }
+            ],
+            "method_id": 78680
+          }
+        ]
+      },
+      {
+        "class_name": "android.accessibilityservice.AccessibilityService.SoftKeyboardController",
+        "class_id": 4855,
+        "class_sentence": [
+          {
+            "sentence_text": "Used to control and query the soft keyboard show mode.",
+            "sentence_id": 278903
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.accessibilityservice.AccessibilityService.SoftKeyboardController.setShowMode(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the soft keyboard show mode.",
+                "sentence_id": 282578
+              },
+              {
+                "sentence_text": "An AccessibilityService can also request the show mode SHOW_MODE_HIDDEN, where the soft keyboard is never shown.",
+                "sentence_id": 440683
+              }
+            ],
+            "method_id": 55592
+          },
+          {
+            "method_name": "android.accessibilityservice.AccessibilityService.SoftKeyboardController.getShowMode()",
+            "method_sentence": [
+              {
+                "sentence_text": "An AccessibilityService can also request the show mode SHOW_MODE_HIDDEN, where the soft keyboard is never shown.",
+                "sentence_id": 440679
+              },
+              {
+                "sentence_text": "Returns the show mode of the soft keyboard.",
+                "sentence_id": 282576
+              }
+            ],
+            "method_id": 55590
+          },
+          {
+            "method_name": "android.accessibilityservice.AccessibilityService.SoftKeyboardController.addOnShowModeChangedListener(android.accessibilityservice.AccessibilityService.SoftKeyboardController.OnShowModeChangedListener,android.os.Handler)",
+            "method_sentence": [
+              {
+                "sentence_text": "Adds the specified change listener to the list of soft keyboard show mode change listeners.",
+                "sentence_id": 282574
+              }
+            ],
+            "method_id": 55588
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Download a file with Android, and showing the progress in a ProgressDialog",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "android.app.ProgressDialog",
+        "class_id": 5016,
+        "class_sentence": [
+          {
+            "sentence_text": "Instead of using this class, you should use a progress indicator like ProgressBar, which can be embedded in your app's UI.",
+            "sentence_id": 426561
+          },
+          {
+            "sentence_text": "Alternatively, you can use a notification to inform the user of the task's progress.",
+            "sentence_id": 426562
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.app.ProgressDialog.setProgressDrawable(android.graphics.drawable.Drawable)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the drawable to be used to display the progress value.",
+                "sentence_id": 284540
+              }
+            ],
+            "method_id": 57615
+          },
+          {
+            "method_name": "android.app.ProgressDialog.setSecondaryProgress(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the secondary progress.",
+                "sentence_id": 284544
+              }
+            ],
+            "method_id": 57619
+          },
+          {
+            "method_name": "android.app.ProgressDialog.setProgress(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the current progress.",
+                "sentence_id": 284539
+              }
+            ],
+            "method_id": 57614
+          }
+        ]
+      },
+      {
+        "class_name": "android.app.DownloadManager",
+        "class_id": 4959,
+        "class_sentence": [
+          {
+            "sentence_text": "Apps that request downloads through this API should register a broadcast receiver for ACTION_NOTIFICATION_CLICKED to appropriately handle when the user clicks on a running download in a notification or from the downloads UI.",
+            "sentence_id": 426089
+          },
+          {
+            "sentence_text": "The download manager will conduct the download in the background, taking care of HTTP interactions and retrying downloads after failures or across connectivity changes and system reboots.",
+            "sentence_id": 426088
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.app.DownloadManager.addCompletedDownload(java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String,long,boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "The file should be world-readable, so that it can be managed by the Downloads App and any other app that is used to read it (for example, Gallery app to display the file, if the file contents represent a video/image).",
+                "sentence_id": 444659
+              },
+              {
+                "sentence_text": "Adds a file to the downloads database system, so it could appear in Downloads App (and thus become eligible for management by the Downloads App).",
+                "sentence_id": 283694
+              }
+            ],
+            "method_id": 56740
+          },
+          {
+            "method_name": "android.app.DownloadManager.remove(long...)",
+            "method_sentence": [
+              {
+                "sentence_text": "Cancel downloads and remove them from the download manager.",
+                "sentence_id": 283703
+              },
+              {
+                "sentence_text": "Each download will be stopped if it was running, and it will no longer be accessible through the download manager.",
+                "sentence_id": 444687
+              }
+            ],
+            "method_id": 56749
+          },
+          {
+            "method_name": "android.app.DownloadManager.addCompletedDownload(java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String,long,boolean,android.net.Uri,android.net.Uri)",
+            "method_sentence": [
+              {
+                "sentence_text": "Files scanned by MediaScanner appear in the applications used to view media (for example, Gallery app).",
+                "sentence_id": 444666
+              },
+              {
+                "sentence_text": "Adds a file to the downloads database system, so it could appear in Downloads App (and thus become eligible for management by the Downloads App).",
+                "sentence_id": 283695
+              }
+            ],
+            "method_id": 56741
+          }
+        ]
+      },
+      {
+        "class_name": "android.app.DownloadManager.Request",
+        "class_id": 4961,
+        "class_sentence": [
+          {
+            "sentence_text": "Note that the default download destination is a shared volume where the system might delete your file if it needs to reclaim space for system use.",
+            "sentence_id": 426093
+          },
+          {
+            "sentence_text": "This class contains all the information necessary to request a new download.",
+            "sentence_id": 279002
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.app.DownloadManager.Request.setNotificationVisibility(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "By default, a notification is shown only when the download is in progress.",
+                "sentence_id": 444717
+              },
+              {
+                "sentence_text": "Control whether a system notification is posted by the download manager while this download is running or when it is completed.",
+                "sentence_id": 283716
+              }
+            ],
+            "method_id": 56763
+          },
+          {
+            "method_name": "android.app.DownloadManager.Request.setVisibleInDownloadsUi(boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "Set whether this download should be displayed in the system's Downloads UI.",
+                "sentence_id": 283721
+              }
+            ],
+            "method_id": 56768
+          },
+          {
+            "method_name": "android.app.DownloadManager.Request.setTitle(java.lang.CharSequence)",
+            "method_sentence": [
+              {
+                "sentence_text": "Set the title of this download, to be displayed in notifications (if enabled).",
+                "sentence_id": 283720
+              },
+              {
+                "sentence_text": "If no title is given, a default one will be assigned based on the download filename, once the download starts.",
+                "sentence_id": 444733
+              }
+            ],
+            "method_id": 56767
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Get current time and date on Android",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "java.util.Calendar",
+        "class_id": 1860,
+        "class_sentence": [
+          {
+            "sentence_text": "The Calendar class is an abstract class that provides methods for converting between a specific instant in time and a set of calendar fields such as YEAR, MONTH, DAY_OF_MONTH, HOUR, and so on, and for manipulating the calendar fields, such as getting the date of the next week.",
+            "sentence_id": 233714
+          },
+          {
+            "sentence_text": "Calendar will resolve calendar field values to determine the date and time in the following way.",
+            "sentence_id": 352380
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.util.Calendar.getTime()",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns a Date object representing this Calendar's time value (millisecond offset from the Epoch\").",
+                "sentence_id": 253564
+              }
+            ],
+            "method_id": 26232
+          },
+          {
+            "method_name": "java.util.Calendar.getTimeInMillis()",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns this Calendar's time value in milliseconds.",
+                "sentence_id": 253565
+              }
+            ],
+            "method_id": 26233
+          },
+          {
+            "method_name": "java.util.Calendar.setTimeInMillis(long)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets this Calendar's current time from the given long value.",
+                "sentence_id": 253584
+              }
+            ],
+            "method_id": 26252
+          }
+        ]
+      },
+      {
+        "class_name": "android.text.format.Time",
+        "class_id": 6967,
+        "class_sentence": [
+          {
+            "sentence_text": "Calling switchTimezone(String) on a date that cannot exist, such as a wall time that was skipped due to a DST transition, will result in a date in 1969 (i.e.-1, or 1 second before 1st Jan 1970 UTC).",
+            "sentence_id": 435037
+          },
+          {
+            "sentence_text": "An alternative to the Calendar and GregorianCalendar classes.",
+            "sentence_id": 435029
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.text.format.Time.isEpoch(android.text.format.Time)",
+            "method_sentence": [
+              {
+                "sentence_text": "This method can return an incorrect answer when the date / time fields have been set to a local time that contradicts the available timezone information.",
+                "sentence_id": 497385
+              },
+              {
+                "sentence_text": "Returns true if the day of the given time is the epoch on the Julian Calendar (January 1, 1970 on the Gregorian calendar).",
+                "sentence_id": 301997
+              }
+            ],
+            "method_id": 75549
+          },
+          {
+            "method_name": "android.text.format.Time.parse(java.lang.String)",
+            "method_sentence": [
+              {
+                "sentence_text": "If the date-time string included only a date and no time field, then the allDay field of this Time class is set to true and the hour, minute, and second fields are set to zero; otherwise (a time field was included in the date-time string) allDay is set to false.",
+                "sentence_id": 497395
+              },
+              {
+                "sentence_text": "To parse a date-time string and convert it to UTC milliseconds, do something like this: Time time = new Time(); String date = \"20081013T160000Z\"; time.parse(date); long millis = time.normalize(false); .",
+                "sentence_id": 497398
+              }
+            ],
+            "method_id": 75551
+          },
+          {
+            "method_name": "android.text.format.Time.set(int,int,int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the date from the given fields.",
+                "sentence_id": 302003
+              },
+              {
+                "sentence_text": "Call normalize(boolean) if you need those.",
+                "sentence_id": 497412
+              }
+            ],
+            "method_id": 75555
+          }
+        ]
+      },
+      {
+        "class_name": "java.text.SimpleDateFormat",
+        "class_id": 1738,
+        "class_sentence": [
+          {
+            "sentence_text": "Date and Time Patterns Date and time formats are specified by date and time pattern strings.",
+            "sentence_id": 351024
+          },
+          {
+            "sentence_text": "The given date and time are 2001-07-04 12:08:56 local time in the U.S. Pacific Time time zone.",
+            "sentence_id": 351070
+          }
+        ],
+        "method": [
+          {
+            "method_name": "java.text.SimpleDateFormat.setDateFormatSymbols(java.text.DateFormatSymbols)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the date and time format symbols of this date format.",
+                "sentence_id": 251281
+              }
+            ],
+            "method_id": 23949
+          },
+          {
+            "method_name": "java.text.SimpleDateFormat.parse(java.lang.String,java.text.ParsePosition)",
+            "method_sentence": [
+              {
+                "sentence_text": "All of the calendar's date-time fields are cleared before parsing, and the calendar's default values of the date-time fields are used for any missing date-time information.",
+                "sentence_id": 390819
+              },
+              {
+                "sentence_text": "This parsing operation uses the calendar to produce a Date.",
+                "sentence_id": 390818
+              }
+            ],
+            "method_id": 23947
+          },
+          {
+            "method_name": "java.text.SimpleDateFormat.getDateFormatSymbols()",
+            "method_sentence": [
+              {
+                "sentence_text": "Gets a copy of the date and time format symbols of this date format.",
+                "sentence_id": 251277
+              }
+            ],
+            "method_id": 23945
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I display an alert dialog on Android?",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "android.app.AlertDialog",
+        "class_id": 4945,
+        "class_sentence": [
+          {
+            "sentence_text": "If you only want to display a String in this dialog box, use the setMessage() method.",
+            "sentence_id": 426014
+          },
+          {
+            "sentence_text": "A subclass of Dialog that can display one, two or three buttons.",
+            "sentence_id": 278987
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.app.AlertDialog.setView(android.view.View)",
+            "method_sentence": [
+              {
+                "sentence_text": "Set the view to display in that dialog.",
+                "sentence_id": 283466
+              },
+              {
+                "sentence_text": "Parameters view View",
+                "sentence_id": 444051
+              }
+            ],
+            "method_id": 56509
+          },
+          {
+            "method_name": "android.app.AlertDialog.getListView()",
+            "method_sentence": [
+              {
+                "sentence_text": "Gets the list view used in the dialog.",
+                "sentence_id": 283447
+              },
+              {
+                "sentence_text": "Returns ListView The ListView from the dialog.",
+                "sentence_id": 444018
+              }
+            ],
+            "method_id": 56490
+          },
+          {
+            "method_name": "android.app.AlertDialog.getButton(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Gets one of the buttons used in the dialog.",
+                "sentence_id": 283446
+              },
+              {
+                "sentence_text": "Returns Button The button from the dialog, or null if a button does not exist.",
+                "sentence_id": 444017
+              }
+            ],
+            "method_id": 56489
+          }
+        ]
+      },
+      {
+        "class_name": "android.app.Dialog",
+        "class_id": 4957,
+        "class_sentence": [
+          {
+            "sentence_text": "If these methods are used, getOwnerActivity() will return the Activity that managed this dialog.",
+            "sentence_id": 426042
+          },
+          {
+            "sentence_text": "See onCreateDialog(int), onPrepareDialog(int, Dialog), showDialog(int), and dismissDialog(int).",
+            "sentence_id": 426041
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.app.Dialog.hide()",
+            "method_sentence": [
+              {
+                "sentence_text": "Hide the dialog, but do not dismiss it.",
+                "sentence_id": 283602
+              }
+            ],
+            "method_id": 56647
+          },
+          {
+            "method_name": "android.app.Dialog.dismiss()",
+            "method_sentence": [
+              {
+                "sentence_text": "Dismiss this dialog, removing it from the screen.",
+                "sentence_id": 283586
+              },
+              {
+                "sentence_text": "Note that you should not override this method to do cleanup when the dialog is dismissed, instead implement that in onStop().",
+                "sentence_id": 444370
+              }
+            ],
+            "method_id": 56631
+          },
+          {
+            "method_name": "android.app.Dialog.getOwnerActivity()",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns the Activity that owns this Dialog.",
+                "sentence_id": 283598
+              },
+              {
+                "sentence_text": "Returns Activity The Activity that owns this Dialog.",
+                "sentence_id": 444403
+              }
+            ],
+            "method_id": 56643
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to convert a Drawable to a Bitmap?",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "android.graphics.drawable.BitmapDrawable",
+        "class_id": 5501,
+        "class_sentence": [
+          {
+            "sentence_text": "Also see the Bitmap class, which handles the management and transformation of raw bitmap graphics, and should be used when drawing to a Canvas.",
+            "sentence_id": 428264
+          },
+          {
+            "sentence_text": "A Drawable that wraps a bitmap and can be tiled, stretched, or aligned.",
+            "sentence_id": 279490
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.graphics.drawable.BitmapDrawable.getBitmap()",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns the bitmap used by this drawable to render.",
+                "sentence_id": 289255
+              }
+            ],
+            "method_id": 62478
+          },
+          {
+            "method_name": "android.graphics.drawable.BitmapDrawable.setFilterBitmap(boolean)",
+            "method_sentence": [
+              {
+                "sentence_text": "If the drawable does not use bitmaps, this call is ignored.",
+                "sentence_id": 462802
+              },
+              {
+                "sentence_text": "Set to true to have the drawable filter its bitmaps with bilinear sampling when they are scaled or rotated.",
+                "sentence_id": 289279
+              }
+            ],
+            "method_id": 62502
+          },
+          {
+            "method_name": "android.graphics.drawable.BitmapDrawable.BitmapDrawable(android.graphics.Bitmap)",
+            "method_sentence": [
+              {
+                "sentence_text": "Create drawable from a bitmap, not dealing with density.",
+                "sentence_id": 462845
+              },
+              {
+                "sentence_text": "Parameters bitmap Bitmap",
+                "sentence_id": 462846
+              }
+            ],
+            "method_id": 62517
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I center text horizontally and vertically in a TextView?",
+    "summary_way": "APIKGSumm",
+    "summary": [
+      {
+        "class_name": "android.widget.TextView",
+        "class_id": 7579,
+        "class_sentence": [
+          {
+            "sentence_text": "A user interface element that displays text to the user. ",
+            "sentence_id": 218734
+          },
+          {
+            "sentence_text": "To provide user-editable text, see EditText",
+            "sentence_id": 218735
+          }
+        ],
+        "method": [
+          {
+            "method_name": "android.widget.TextView.setGravity(int)",
+            "method_sentence": [
+              {
+                "sentence_text": "Sets the horizontal alignment of the text and the vertical gravity that will be used when there is extra space in the TextView beyond what is required for the text itself.",
+                "sentence_id": 308895
+              }
+            ],
+            "method_id": 82577
+          },
+          {
+            "method_name": "android.widget.TextView.getTextScaleX()",
+            "method_sentence": [
+              {
+                "sentence_text": "Gets the extent by which text should be stretched horizontally.",
+                "sentence_id": 308815
+              }
+            ],
+            "method_id": 82497
+          },
+          {
+            "method_name": "android.widget.TextView.getGravity()",
+            "method_sentence": [
+              {
+                "sentence_text": "Returns the horizontal and vertical alignment of this TextView.",
+                "sentence_id": 308766
+              }
+            ],
+            "method_id": 82448
+          }
+        ]
+      }
+    ]
+  }
+]

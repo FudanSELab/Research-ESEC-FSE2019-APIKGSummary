@@ -1,0 +1,293 @@
+[
+  {
+    "query": "How do I efficiently iterate over each entry in a Java Map?",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "java.util.Map",
+        "summary_text": [
+          "...This implementation provides all of the optional map operations, and permits null ...",
+          "... Iteration over collection views requires time proportional to the \"capacity\" of the ...",
+          "... When the number of entries in the hash table exceeds the product of the load ...",
+          "... stored more efficiently than letting it perform automatic rehashing as needed to ..."
+        ]
+      },
+      {
+        "class_name": "java.util.Map.Entry",
+        "summary_text": []
+      }
+    ]
+  },
+  {
+    "query": "How to split a string in Java?",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "java.lang.String",
+        "summary_text": [
+          "...All string literals in Java programs, such as \"abc\" , are implemented as ...",
+          "... Methods declared in class java.lang. ...",
+          "... public String[] split\u200b(String regex, int limit)...."
+        ]
+      },
+      {
+        "class_name": "java.util.StringTokenize",
+        "summary_text": [
+          "...The string tokenizer class allows an application to break a string into tokens. The tokenization method is much simpler than the one used by the ..."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I create a file and write to it in Java?",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "java.io.PrintWriter",
+        "summary_text": [
+          "...A convenience method to write a formatted string to this writer using the specified ...",
+          "... while opening or creating the file: SecurityException - If a security manager is ..."
+        ]
+      },
+      {
+        "class_name": "java.io.FileOutputStream",
+        "summary_text": [
+          "...Creates a file output stream to write to the file with the specified name. A new FileDescriptor object is created to represent this file connection. First, if there is a ..."
+        ]
+      },
+      {
+        "class_name": "java.nio.file.Files",
+        "summary_text": [
+          "...In other words, it opens the file for writing, creating the file if it doesn't exist, or initially truncating an existing regular-file to a size of 0 if it exists. Usage Examples:..."
+        ]
+      },
+      {
+        "class_name": "java.io.Writer",
+        "summary_text": [
+          "... for example a file, then flushing the stream guarantees only that bytes previously written to the stream are passed to the operating system for writing; it does ..."
+        ]
+      },
+      {
+        "class_name": "java.io.BufferedWriter",
+        "summary_text": [
+          "...newBufferedWriter(java.nio.file.Path ...",
+          "... Fields inherited from class java.io.Writer \u00b7 lock ...",
+          "... public void write(char[] cbuf, int off, int len) throws IOException. Writes a ..."
+        ]
+      },
+      {
+        "class_name": "java.io.FileWriter",
+        "summary_text": [
+          "...Constructs a FileWriter object given a file name with a boolean indicating whether ...",
+          "... Parameters: file - a File object to write to: append - if true , then bytes will be ..."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to round a number to n decimal places in Java",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "java.text.DecimalFormat",
+        "summary_text": [
+          "...Gets the currency used by this decimal format when formatting currency values. ...",
+          "... Gets the maximum number of digits allowed in the fraction portion of a number. ...",
+          ".... ArithmeticException - if rounding is needed with rounding mode being set to ..."
+        ]
+      },
+      {
+        "class_name": "java.lang.Math",
+        "summary_text": [
+          "... DebugGraphics \u00b7 DecimalFormat \u00b7 DecimalFormatSymbols \u00b7 DecimalFormatSymbolsProvider ...",
+          "... For a given floating-point format, an ulp of a specific real number value is the distance ...",
+          "... number nearest the exact result; such a method is correctly rounded. ...",
+          "... If the argument is equal to 10n for integer n, then the result is n...."
+        ]
+      },
+      {
+        "class_name": "java.math.BigDecimal",
+        "summary_text": [
+          "...If zero or positive, the scale is the number of digits to the right of the decimal point. ...",
+          "... The BigDecimal class gives its user complete control over rounding behavior. ...",
+          "... is equivalent to this one with the decimal point moved n places to the right...."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How can I generate an MD5 hash?",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "java.security.MessageDigest",
+        "summary_text": [
+          "...Completes the hash computation by performing final operations such as padding. The digest is reset after this call is made. Returns: the array of bytes for the ..."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "File to byte[] in Java",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "java.io.File",
+        "summary_text": [
+          "...Methods inherited from class java.lang. ...",
+          "... Returns: The length, in bytes, of the file denoted by this abstract pathname, ...",
+          "... public String[] list(FilenameFilter filter)...."
+        ]
+      },
+      {
+        "class_name": "java.nio.file.Files",
+        "summary_text": [
+          "...Opens or creates a file, returning a seekable byte channel to access the file. ...",
+          "... For example, suppose we want to iterate over the files ending with \".java\" in a directory: Path dir ...",
+          "... public static byte[] readAllBytes(Path path) throws IOException...."
+        ]
+      },
+      {
+        "class_name": "java.io.RandomAccessFile",
+        "summary_text": [
+          "...Random access files permit nonsequential, or random, access to a file's contents. To access a file ...",
+          "... on the file is closed. String s = \"I was here!\n\"; byte data[] = s...."
+        ]
+      },
+      {
+        "class_name": "java.io.FileInputStream",
+        "summary_text": [
+          "...Creates a FileInputStream by opening a connection to an actual file, the file named by the File object ...",
+          ".... public int read(byte[] b, int off, int len) throws IOException...."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Close/hide the Android Soft Keyboard",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "android.view.inputmethod.InputMethodManager",
+        "summary_text": [
+          "...You can also control the preferred soft input state (open, closed, etc) for ...",
+          "... to indicate that the soft input window should only be hidden if it was ..."
+        ]
+      },
+      {
+        "class_name": "android.view.Window",
+        "summary_text": [
+          "...Has the app specified their own soft input mode? ...",
+          ".... desired Transition used to move Views out of the scene when the Window is preparing to close. ...",
+          "... SYSTEM_UI_FLAG_FULLSCREEN , which allows you to seamlessly hide the action bar in ..."
+        ]
+      },
+      {
+        "class_name": "android.accessibilityservice.AccessibilityService.SoftKeyboardController",
+        "summary_text": []
+      }
+    ]
+  },
+  {
+    "query": "Download a file with Android, and showing the progress in a ProgressDialog",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "android.app.ProgressDialog",
+        "summary_text": [
+          "...A dialog showing a progress indicator and an optional text message or view. Only a text ...",
+          "... Creates a ProgressDialog with a circular, spinning progress bar...."
+        ]
+      },
+      {
+        "class_name": "android.app.DownloadManager",
+        "summary_text": [
+          "...Clients may request that a URI be downloaded to a particular destination file. The download ...",
+          "... Intent action to launch an activity to display all downloads...."
+        ]
+      },
+      {
+        "class_name": "android.app.DownloadManager.Request",
+        "summary_text": [
+          "...This download is visible and shows in the notifications while in progress and after ...",
+          "... If the file to be downloaded is to be scanned by MediaScanner, this method ..."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Get current time and date on Android",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "java.util.Calendar",
+        "summary_text": [
+          "...When computing a date and time from the calendar fields, there may be ...",
+          ".... Field number for get and set indicating the day number within the current year...."
+        ]
+      },
+      {
+        "class_name": "android.text.format.Time",
+        "summary_text": [
+          "...Parses a date-time string in either the RFC 2445 format or an abbreviated ...",
+          "... Sets the time of the given Time object to the current time. ...",
+          "... If you want to normalize the fields in this Time object and also get the milliseconds then ..."
+        ]
+      },
+      {
+        "class_name": "java.text.SimpleDateFormat",
+        "summary_text": [
+          "...SimpleDateFormat supports the date and time formatting algorithm and pattern letters ...",
+          "... era, G, 13, AD, Era - Replaced with the Era string for the current date. ...",
+          "... [icu] Get the formatter's DisplayContext value for the specified DisplayContext...."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I display an alert dialog on Android?",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "android.app.AlertDialog",
+        "summary_text": [
+          "...A subclass of Dialog that can display one, two or three buttons. If you only want to display a String in this dialog box, use the setMessage() ..."
+        ]
+      },
+      {
+        "class_name": "android.app.Dialog",
+        "summary_text": [
+          "...AlertDialog, CharacterPickerDialog, Presentation ...",
+          "... Often you will want to have a Dialog display on top of the current input ...",
+          "... For example, if Activity#showDialog(int) is used to show this Dialog, that Activity will be the owner (by default)...."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How to convert a Drawable to a Bitmap?",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "android.graphics.drawable.BitmapDrawable",
+        "summary_text": [
+          "...android:dither, Enables or disables dithering of the bitmap if the bitmap does not ...",
+          ".... Indicates whether this drawable will change its appearance based on state...."
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I center text horizontally and vertically in a TextView?",
+    "summary_way": "google",
+    "summary": [
+      {
+        "class_name": "android.widget.TextView",
+        "summary_text": [
+          "android:gravity, Specifies how to align the text by the view's x- and/or y-axis when ..... ",
+          "The TextView scales text size both horizontally and vertically to fit within the ..."
+        ]
+      }
+    ]
+  }
+]

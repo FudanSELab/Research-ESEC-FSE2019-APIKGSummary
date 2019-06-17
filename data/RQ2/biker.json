@@ -1,0 +1,243 @@
+[
+  {
+    "query": "How do I efficiently iterate over each entry in a Java Map?",
+    "summary_way": "biker",
+    "summary": [
+      {
+        "code_snippets": [
+          "for (Map.Entry<String,User> entry : users.entrySet()) {\n    // entry.getValue() is of type User now\n}\n",
+          "Iterator entries = myMap.entrySet().iterator();\nwhile (entries.hasNext()) {\n  Entry thisEntry = (Entry) entries.next();\n  Object key = thisEntry.getKey();\n  Object value = thisEntry.getValue();\n  // ...\n}\n",
+          "for ( String k : map.keySet() ) {\n    ...\n}\n"
+        ],
+        "class_name": "java.util.Map",
+        "similar_question": [
+          "How to efficiently iterate over each Entry in a Map?",
+          "How do I iterate through a Java Linked Hash map?",
+          "Java : Iteration through a HashMap, which is more efficient?"
+        ],
+        "java_doc": "An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value."
+      },
+      {
+        "code_snippets": [
+          "Map<String, String> someMap;\nfor (Entry<String,String> entry : someMap.entrySet()) {\n    System.out.println(\"key > \" + entry.getKey()+ \"  : value = \" + entry.getValue());\n}\n"
+        ],
+        "class_name": "java.util.Map.Entry",
+        "similar_question": [
+          "Iterating over keys and values in a Map"
+        ],
+        "java_doc": "A map entry (key-value pair). The Map.entrySet method returns a collection-view of the map, whose elements are of this class. The only way to obtain a reference to a map entry is from the iterator of this collection-view. "
+      }
+    ]
+  },
+  {
+    "query": "How to split a string in Java",
+    "summary_way": "biker",
+    "summary": [
+      {
+        "code_snippets": [
+          "String[] currentLineArray = currentInputLine.replaceAll(\"\\\\s\", \"\").split(\",\");\n",
+          "String string = \"004-034556\";\nString[] parts = string.split(\"-\");\nString part1 = parts[0]; // 004\nString part2 = parts[1]; // 034556\n",
+          "s.split(\"\\\\|\")\n"
+        ],
+        "class_name": "java.lang.String",
+        "similar_question": [
+          "How to split a string in Java",
+          "Splitting a String in Java",
+          "How to split a String array?"
+        ],
+        "java_doc": "The String class represents character strings. All string literals in Java programs, such as \"abc\", are implemented as instances of this class."
+      },
+       {
+        "code_snippets": [
+        ],
+        "class_name": "java.util.StringTokenizer",
+        "similar_question": [
+        ],
+        "java_doc": ""
+      }
+    ]
+  },
+  {
+    "query": "How do I create a file and write to it in Java?",
+    "summary_way": "biker",
+    "summary": [
+      {
+        "code_snippets": [
+          "for (int i = 0; i < astronauts.length; i++) { \n    pw.print(Arrays.toString(astronauts[i]); \n} \n",
+          "new FileWriter(\"timeWorked.dat\", true)\n",
+          "if (!file.exists())\n  file.mkdirs();\n  file.createNewFile();\n"
+        ],
+        "class_name": "java.io.PrintWriter",
+        "similar_question": [
+          "How to write a new line to a file in Java?",
+          "Creating and Writing to a File",
+          "How do I write String arrays to a text file in java using Printwriter?"
+        ],
+        "java_doc": "Prints formatted representations of objects to a text-output stream."
+      },
+      {
+        "code_snippets": [
+          "File myFile = new File(\"your_file.bat\");\nmyFile.createNewFile();\n",
+          "// encrypted data in array\nbyte[] data = ...\n\nFileOutputStream fos = ...\nfos.write(data, 0, data.length);\nfos.flush();\nfos.close();\n",
+          "ObjectOutputStream out = new ObjectOutputStream(fos);\nout.writeObject(al);\n"
+        ],
+        "class_name": "java.io.FileOutputStream",
+        "similar_question": [
+          "how to create a .dat file in java",
+          "How to write file in binary in java",
+          "Java: How to write binary files?"
+        ],
+        "java_doc": "Prints formatted representations of objects to a text-output stream"
+      },
+      {
+        "code_snippets": [
+          "File f = new File(\"C:/a/b/test.txt\");\nf.getParentFile().mkdirs();\n// ...\n",
+          "new File(path).mkdir();\n",
+          "new File(\"/path/directory\").mkdirs();\n"
+        ],
+        "class_name": "java.nio.file.Files",
+        "similar_question": [
+          "How to create a file in a directory in java?",
+          "How to create a folder in Java?",
+          "How to create a directory in Java?"
+        ],
+        "java_doc": "This class consists exclusively of static methods that operate on files, directories, or other types of files."
+      },
+      {
+        "code_snippets": [
+          "if(s.compareTo(\"stop\")==0)\n"
+        ],
+        "class_name": "java.io.Writer",
+        "similar_question": [
+          "Creating a file and writing to it",
+          "How do you write any ASCII character to a file in Java?"
+        ],
+        "java_doc": "Abstract class for writing to character streams."
+      },
+       {
+        "code_snippets": [
+        ],
+        "class_name": "java.io.BufferedWriter",
+        "similar_question": [
+        ],
+        "java_doc": ""
+      },
+       {
+        "code_snippets": [
+        ],
+        "class_name": "java.io.FileWriter",
+        "similar_question": [
+        ],
+        "java_doc": ""
+      }
+
+
+    ]
+  },
+  {
+    "query": "How to round a number to n decimal places in Java",
+    "summary_way": "biker",
+    "summary": [
+      {
+        "code_snippets": [
+          "double roundTwoDecimals(double d)\n{\n    DecimalFormat twoDForm = new DecimalFormat(\"#.##\");\n    return Double.valueOf(twoDForm.format(d));\n}\n",
+          "DecimalFormat twoDForm = new DecimalFormat(\"#.00\");\n",
+          "DecimalFormat df = new DecimalFormat(\"0.000\");\nSystem.out.println(df.format(0.1));\n"
+        ],
+        "class_name": "java.text.DecimalFormat",
+        "similar_question": [
+          "How to keep n decimal places in Java",
+          "How do I round a double to two decimal places in Java?",
+          "How to round decimal numbers in Android"
+        ],
+        "java_doc": "DecimalFormat is a concrete subclass of NumberFormat that formats decimal numbers."
+      },
+      {
+        "code_snippets": [
+          "DecimalFormat df2 = new DecimalFormat(\"#.000E0\"); \n",
+          "DecimalFormat twoDForm = new DecimalFormat(\"#.00\");\n",
+          "BigDecimal a = new BigDecimal(\"123.13698\");\nBigDecimal roundOff = a.setScale(2, BigDecimal.ROUND_HALF_EVEN);\nSystem.out.println(roundOff);\n"
+        ],
+        "class_name": "java.lang.Math",
+        "similar_question": [
+          "How do I round a double to two decimal places in Java?",
+          "How to round a large decimal value in Java?",
+          "round up to 2 decimal places in java?"
+        ],
+        "java_doc": "The class Math contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions."
+      },
+      {
+        "code_snippets": [
+          "DecimalFormat twoDForm = new DecimalFormat(\"#.00\");\n",
+          "BigDecimal a = new BigDecimal(\"123.13698\");\nBigDecimal roundOff = a.setScale(2, BigDecimal.ROUND_HALF_EVEN);\nSystem.out.println(roundOff);\n",
+          "System.out.println(new BigDecimal(0.3));\n"
+        ],
+        "class_name": "java.math.BigDecimal",
+        "similar_question": [
+          "How do I round a double to two decimal places in Java?",
+          "How to truncate double to N decimal places?",
+          "round up to 2 decimal places in java?"
+        ],
+        "java_doc": "Immutable, arbitrary-precision signed decimal numbers. A BigDecimal consists of an arbitrary precision integer unscaled value and a 32-bit integer scale."
+      }
+    ]
+  },
+  {
+    "query": "How can I generate an MD5 hash?",
+    "summary_way": "biker",
+    "summary": [
+      {
+        "code_snippets": [
+          "String getSaltedHash(String password)\nboolean checkPassword(String password, String stored)\n",
+          "private static String encodeHex(byte[] digest) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < digest.length; i++) {\n        sb.append(Integer.toString((digest[i] & 0xff) + 0x100, 16).substring(1));\n    }\n    return sb.toString();\n}\n",
+          "// ...\nStringBuilder builder = new StringBuilder();\nfor (int i = hash.length(); i < 64; i++) {\n  builder.append('0');\n}\nbuilder.append(hash);\nreturn builder.toString();\n"
+        ],
+        "class_name": "java.security.MessageDigest",
+        "similar_question": [
+          "How do I generate a hash code with hash sha256 in java?",
+          "Issue with MD5 hash generation",
+          "How can I hash a password in Java?"
+        ],
+        "java_doc": "This MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256. Message digests are secure one-way hash functions that take arbitrary-sized data and output a fixed-length hash value."
+      }
+    ]
+  },
+  {
+    "query": "File to byte[] in Java",
+    "summary_way": "biker",
+    "summary": [
+      {
+        "code_snippets": [
+        ],
+        "class_name": "java.io.File",
+        "similar_question": [
+        ],
+        "java_doc": ""
+      },
+      {
+        "code_snippets": [
+        ],
+        "class_name": "java.nio.file.Files",
+        "similar_question": [
+        ],
+        "java_doc": ""
+      },
+      {
+        "code_snippets": [
+        ],
+        "class_name": "java.io.RandomAccessFile",
+        "similar_question": [
+        ],
+        "java_doc": ""
+      },
+      {
+        "code_snippets": [
+        ],
+        "class_name": "java.io.FileInputStream",
+        "similar_question": [
+        ],
+        "java_doc": ""
+      }
+    ]
+  }
+]

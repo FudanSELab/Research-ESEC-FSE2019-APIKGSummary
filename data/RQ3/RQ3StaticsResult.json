@@ -1,0 +1,1987 @@
+{
+  "1": {
+    "query_index": 1,
+    "query": "How can I read input from the console using the Scanner class in Java?",
+    "query_type": "single_top_1",
+    "ground_truth_classes": [
+      "java.io.DataInputStream",
+      "java.io.InputStreamReader",
+      "java.util.Scanner",
+      "java.io.BufferedReader",
+      "java.io.Console"
+    ],
+    "without_summary_time_list": [
+      77,
+      101,
+      92,
+      447,
+      216,
+      165
+    ],
+    "with_summary_time_list": [
+      66,
+      88,
+      202,
+      151,
+      174,
+      39
+    ],
+    "without_summary_beginner": [
+      447,
+      165
+    ],
+    "without_summary_Interm": [
+      77,
+      92
+    ],
+    "without_summary_Advanced": [
+      101,
+      216
+    ],
+    "with_summary_beginner": [
+      66,
+      39
+    ],
+    "with_summary_Interm": [
+      88,
+      151
+    ],
+    "with_summary_Advanced": [
+      202,
+      174
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 119.5,
+    "without_summary_media_time": 133.0,
+    "with_summary_mean_time": 120.0,
+    "without_summary_mean_time": 183.0,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskA"
+  },
+  "2": {
+    "query_index": 2,
+    "query": "How to wait for all threads to finish, using ExecutorService?",
+    "query_type": "single_top_1",
+    "ground_truth_classes": [
+      "java.util.concurrent.ThreadPoolExecutor",
+      "java.util.concurrent.CyclicBarrier",
+      "java.util.concurrent.ScheduledThreadPoolExecutor",
+      "java.lang.Thread",
+      "java.util.concurrent.ExecutorService",
+      "java.util.concurrent.CountDownLatch",
+      "java.util.concurrent.ForkJoinPool",
+      "java.util.concurrent.TimeUnit"
+    ],
+    "without_summary_time_list": [
+      116,
+      178,
+      58,
+      580,
+      191,
+      157
+    ],
+    "with_summary_time_list": [
+      294,
+      106,
+      128,
+      212,
+      154,
+      182
+    ],
+    "without_summary_beginner": [
+      580,
+      157
+    ],
+    "without_summary_Interm": [
+      116,
+      58
+    ],
+    "without_summary_Advanced": [
+      178,
+      191
+    ],
+    "with_summary_beginner": [
+      294,
+      182
+    ],
+    "with_summary_Interm": [
+      106,
+      212
+    ],
+    "with_summary_Advanced": [
+      128,
+      154
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 168.0,
+    "without_summary_media_time": 167.5,
+    "with_summary_mean_time": 179.33333333333334,
+    "without_summary_mean_time": 213.33333333333334,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskB"
+  },
+  "3": {
+    "query_index": 3,
+    "query": "Listing only files in directory",
+    "query_type": "single_top_3",
+    "ground_truth_classes": [
+      "java.nio.file.Files",
+      "java.nio.file.Path",
+      "java.io.File",
+      "java.util.List"
+    ],
+    "without_summary_time_list": [
+      425,
+      319,
+      121,
+      161,
+      153,
+      162
+    ],
+    "with_summary_time_list": [
+      274,
+      113,
+      218,
+      205,
+      76,
+      38
+    ],
+    "without_summary_beginner": [
+      161,
+      162
+    ],
+    "without_summary_Interm": [
+      425,
+      121
+    ],
+    "without_summary_Advanced": [
+      319,
+      153
+    ],
+    "with_summary_beginner": [
+      274,
+      38
+    ],
+    "with_summary_Interm": [
+      113,
+      205
+    ],
+    "with_summary_Advanced": [
+      218,
+      76
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 159.0,
+    "without_summary_media_time": 161.5,
+    "with_summary_mean_time": 154.0,
+    "without_summary_mean_time": 223.5,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskA"
+  },
+  "4": {
+    "query_index": 4,
+    "query": "Is there a way to instantiate a class by name in Java?",
+    "query_type": "single_top_3",
+    "ground_truth_classes": [
+      "java.lang.Class",
+      "java.lang.ClassLoader",
+      "java.lang.String"
+    ],
+    "without_summary_time_list": [
+      91,
+      164,
+      147,
+      287,
+      107,
+      170
+    ],
+    "with_summary_time_list": [
+      373,
+      250,
+      176,
+      183,
+      59,
+      64
+    ],
+    "without_summary_beginner": [
+      287,
+      170
+    ],
+    "without_summary_Interm": [
+      91,
+      147
+    ],
+    "without_summary_Advanced": [
+      164,
+      107
+    ],
+    "with_summary_beginner": [
+      373,
+      64
+    ],
+    "with_summary_Interm": [
+      250,
+      183
+    ],
+    "with_summary_Advanced": [
+      176,
+      59
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      0,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 179.5,
+    "without_summary_media_time": 155.5,
+    "with_summary_mean_time": 184.16666666666666,
+    "without_summary_mean_time": 161.0,
+    "with_summary_mean_class_correctness": 0.8333333333333334,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskB"
+  },
+  "5": {
+    "query_index": 5,
+    "query": "How do I properly load a BufferedImage in java?",
+    "query_type": "single_top_5",
+    "ground_truth_classes": [
+      "java.awt.image.BufferedImage",
+      "javax.imageio.ImageIO",
+      "java.io.File"
+    ],
+    "without_summary_time_list": [
+      150,
+      86,
+      99,
+      321,
+      163,
+      113
+    ],
+    "with_summary_time_list": [
+      219,
+      99,
+      176,
+      187,
+      97,
+      109
+    ],
+    "without_summary_beginner": [
+      321,
+      113
+    ],
+    "without_summary_Interm": [
+      150,
+      99
+    ],
+    "without_summary_Advanced": [
+      86,
+      163
+    ],
+    "with_summary_beginner": [
+      219,
+      109
+    ],
+    "with_summary_Interm": [
+      99,
+      187
+    ],
+    "with_summary_Advanced": [
+      176,
+      97
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      0,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 142.5,
+    "without_summary_media_time": 131.5,
+    "with_summary_mean_time": 147.83333333333334,
+    "without_summary_mean_time": 155.33333333333334,
+    "with_summary_mean_class_correctness": 0.8333333333333334,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskA"
+  },
+  "6": {
+    "query_index": 6,
+    "query": "Avoiding PermGen out of memory and GC overhead limit exceeded",
+    "query_type": "single_top_5",
+    "ground_truth_classes": [
+      "java.lang.System"
+    ],
+    "original_correct_class_answer": [],
+    "original_correct_method_answer": [],
+    "full_correct_class_answer": [],
+    "full_correct_method_answer": [],
+    "without_summary_time_list": [
+      49,
+      338,
+      238,
+      57,
+      174,
+      153
+    ],
+    "with_summary_time_list": [
+      155,
+      239,
+      226,
+      153,
+      267,
+      133
+    ],
+    "without_summary_beginner": [
+      57,
+      153
+    ],
+    "without_summary_Interm": [
+      49,
+      238
+    ],
+    "without_summary_Advanced": [
+      338,
+      174
+    ],
+    "with_summary_beginner": [
+      155,
+      133
+    ],
+    "with_summary_Interm": [
+      239,
+      153
+    ],
+    "with_summary_Advanced": [
+      226,
+      267
+    ],
+    "without_summary_correctness": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "with_summary_correctness": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      0,
+      0
+    ],
+    "without_summary_Interm_correctness": [
+      0,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      0,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      0,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 190.5,
+    "without_summary_media_time": 163.5,
+    "with_summary_mean_time": 195.5,
+    "without_summary_mean_time": 168.16666666666666,
+    "with_summary_mean_class_correctness": 0.8333333333333334,
+    "without_summary_mean_class_correctness": 0.16666666666666666,
+    "task_group": "taskB"
+  },
+  "7": {
+    "query_index": 7,
+    "query": "How do I Click a JButton without the user Clicking it?",
+    "query_type": "single_top_10",
+    "ground_truth_classes": [
+      "javax.swing.JButton",
+      "javax.swing.JMenu",
+      "java.awt.event.MouseListener",
+      "javax.swing.AbstractButton",
+      "java.awt.Robot"
+    ],
+    "without_summary_time_list": [
+      59,
+      82,
+      219,
+      178,
+      186,
+      339
+    ],
+    "with_summary_time_list": [
+      88,
+      146,
+      152,
+      155,
+      44,
+      81
+    ],
+    "without_summary_beginner": [
+      178,
+      339
+    ],
+    "without_summary_Interm": [
+      59,
+      219
+    ],
+    "without_summary_Advanced": [
+      82,
+      186
+    ],
+    "with_summary_beginner": [
+      88,
+      81
+    ],
+    "with_summary_Interm": [
+      146,
+      155
+    ],
+    "with_summary_Advanced": [
+      152,
+      44
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 117.0,
+    "without_summary_media_time": 182.0,
+    "with_summary_mean_time": 111.0,
+    "without_summary_mean_time": 177.16666666666666,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskA"
+  },
+  "8": {
+    "query_index": 8,
+    "query": "How to generate a random permutation in Java?",
+    "query_type": "single_top_10",
+    "ground_truth_classes": [
+      "java.lang.Math",
+      "java.util.stream.IntStream",
+      "java.util.Collections",
+      "java.security.SecureRandom",
+      "java.util.ArrayList",
+      "java.util.List",
+      "java.util.Random"
+    ],
+    "without_summary_time_list": [
+      333,
+      84,
+      164,
+      426,
+      183,
+      405
+    ],
+    "with_summary_time_list": [
+      287,
+      159,
+      349,
+      212,
+      33,
+      215
+    ],
+    "without_summary_beginner": [
+      426,
+      405
+    ],
+    "without_summary_Interm": [
+      333,
+      164
+    ],
+    "without_summary_Advanced": [
+      84,
+      183
+    ],
+    "with_summary_beginner": [
+      287,
+      215
+    ],
+    "with_summary_Interm": [
+      159,
+      212
+    ],
+    "with_summary_Advanced": [
+      349,
+      33
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 213.5,
+    "without_summary_media_time": 258.0,
+    "with_summary_mean_time": 209.16666666666666,
+    "without_summary_mean_time": 265.8333333333333,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskB"
+  },
+  "9": {
+    "query_index": 9,
+    "query": "Stable timer independent of system time",
+    "query_type": "single_not_top_10",
+    "ground_truth_classes": [
+      "java.time.LocalDate",
+      "java.util.TimerTask",
+      "javax.swing.Timer",
+      "java.util.concurrent.ScheduledThreadPoolExecutor",
+      "java.util.Timer",
+      "java.lang.System",
+      "java.util.concurrent.ScheduledExecutorService"
+    ],
+    "without_summary_time_list": [
+      220,
+      244,
+      121,
+      243,
+      76,
+      315
+    ],
+    "with_summary_time_list": [
+      315,
+      213,
+      288,
+      223,
+      97,
+      224
+    ],
+    "without_summary_beginner": [
+      243,
+      315
+    ],
+    "without_summary_Interm": [
+      220,
+      121
+    ],
+    "without_summary_Advanced": [
+      244,
+      76
+    ],
+    "with_summary_beginner": [
+      315,
+      224
+    ],
+    "with_summary_Interm": [
+      213,
+      223
+    ],
+    "with_summary_Advanced": [
+      288,
+      97
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      0
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 223.5,
+    "without_summary_media_time": 231.5,
+    "with_summary_mean_time": 226.66666666666666,
+    "without_summary_mean_time": 203.16666666666666,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 0.6666666666666666,
+    "task_group": "taskA"
+  },
+  "10": {
+    "query_index": 10,
+    "query": "Is there any way to find os name using java?",
+    "query_type": "single_not_top_10",
+    "ground_truth_classes": [
+      "java.util.Properties",
+      "java.lang.management.OperatingSystemMXBean",
+      "org.hyperic.sigar.OperatingSystem.",
+      "java.lang.System"
+    ],
+    "without_summary_time_list": [
+      58,
+      45,
+      217,
+      291,
+      143,
+      169
+    ],
+    "with_summary_time_list": [
+      191,
+      250,
+      171,
+      107,
+      129,
+      135
+    ],
+    "without_summary_beginner": [
+      291,
+      169
+    ],
+    "without_summary_Interm": [
+      45,
+      217
+    ],
+    "without_summary_Advanced": [
+      58,
+      143
+    ],
+    "with_summary_beginner": [
+      191,
+      135
+    ],
+    "with_summary_Interm": [
+      250,
+      107
+    ],
+    "with_summary_Advanced": [
+      171,
+      129
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      0,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 153.0,
+    "without_summary_media_time": 156.0,
+    "with_summary_mean_time": 163.83333333333334,
+    "without_summary_mean_time": 153.83333333333334,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 0.6666666666666666,
+    "task_group": "taskB"
+  },
+  "11": {
+    "query_index": 11,
+    "query": "Reading a plain text file in Java",
+    "query_type": "multi_top3",
+    "ground_truth_classes": [
+      "java.nio.file.Files",
+      "java.io.ObjectInputStream",
+      "java.io.LineNumberReader",
+      "java.io.InputStreamReader",
+      "java.io.File",
+      "java.io.FileReader",
+      "java.io.BufferedReader"
+    ],
+    "without_summary_time_list": [
+      164,
+      349,
+      142,
+      224,
+      122,
+      182
+    ],
+    "with_summary_time_list": [
+      121,
+      124,
+      153,
+      115,
+      121,
+      333
+    ],
+    "without_summary_beginner": [
+      164,
+      182
+    ],
+    "without_summary_Interm": [
+      349,
+      224
+    ],
+    "without_summary_Advanced": [
+      142,
+      122
+    ],
+    "with_summary_beginner": [
+      115,
+      333
+    ],
+    "with_summary_Interm": [
+      124,
+      153
+    ],
+    "with_summary_Advanced": [
+      121,
+      121
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 122.5,
+    "without_summary_media_time": 173.0,
+    "with_summary_mean_time": 161.16666666666666,
+    "without_summary_mean_time": 197.16666666666666,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskA"
+  },
+  "12": {
+    "query_index": 12,
+    "query": "Load Java Image inside package from a class in a different package",
+    "query_type": "multi_top3",
+    "ground_truth_classes": [
+      "java.lang.ClassLoader",
+      "javax.imageio.ImageIO",
+      "javax.swing.ImageIcon",
+      "java.net.URL",
+      "java.awt.Image",
+      "java.lang.Class",
+      "java.net.URLClassLoader"
+    ],
+    "without_summary_time_list": [
+      334,
+      168,
+      487,
+      327,
+      131,
+      223
+    ],
+    "with_summary_time_list": [
+      124,
+      155,
+      195,
+      169,
+      220,
+      296
+    ],
+    "without_summary_beginner": [
+      334,
+      223
+    ],
+    "without_summary_Interm": [
+      168,
+      327
+    ],
+    "without_summary_Advanced": [
+      487,
+      131
+    ],
+    "with_summary_beginner": [
+      169,
+      296
+    ],
+    "with_summary_Interm": [
+      155,
+      195
+    ],
+    "with_summary_Advanced": [
+      124,
+      220
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 182.0,
+    "without_summary_media_time": 275.0,
+    "with_summary_mean_time": 193.16666666666666,
+    "without_summary_mean_time": 278.3333333333333,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 0.8333333333333334,
+    "task_group": "taskB"
+  },
+  "13": {
+    "query_index": 13,
+    "query": "Java - Draw a ruler (line with tick marks at 90 degree angle)",
+    "query_type": "multi_top5",
+    "ground_truth_classes": [
+      "java.awt.Graphics2D",
+      "java.awt.geom.Path2D",
+      "java.awt.geom.Line2D",
+      "java.awt.Graphics",
+      "java.lang.Math"
+    ],
+    "without_summary_time_list": [
+      367,
+      206,
+      545,
+      311,
+      786,
+      136
+    ],
+    "with_summary_time_list": [
+      359,
+      394,
+      323,
+      248,
+      322,
+      225
+    ],
+    "without_summary_beginner": [
+      367,
+      136
+    ],
+    "without_summary_Interm": [
+      206,
+      311
+    ],
+    "without_summary_Advanced": [
+      545,
+      786
+    ],
+    "with_summary_beginner": [
+      248,
+      225
+    ],
+    "with_summary_Interm": [
+      394,
+      323
+    ],
+    "with_summary_Advanced": [
+      359,
+      322
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      0,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      0
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 322.5,
+    "without_summary_media_time": 339.0,
+    "with_summary_mean_time": 311.8333333333333,
+    "without_summary_mean_time": 391.8333333333333,
+    "with_summary_mean_class_correctness": 0.8333333333333334,
+    "without_summary_mean_class_correctness": 0.6666666666666666,
+    "task_group": "taskA"
+  },
+  "14": {
+    "query_index": 14,
+    "query": "How to make a symlink in Java when running in Linux?",
+    "query_type": "multi_top5",
+    "ground_truth_classes": [
+      "java.nio.file.Files",
+      "java.nio.file.Paths",
+      "java.lang.Runtime"
+    ],
+    "without_summary_time_list": [
+      136,
+      436,
+      110,
+      176,
+      286,
+      114
+    ],
+    "with_summary_time_list": [
+      157,
+      131,
+      252,
+      157,
+      117,
+      245
+    ],
+    "without_summary_beginner": [
+      136,
+      114
+    ],
+    "without_summary_Interm": [
+      436,
+      176
+    ],
+    "without_summary_Advanced": [
+      110,
+      286
+    ],
+    "with_summary_beginner": [
+      157,
+      245
+    ],
+    "with_summary_Interm": [
+      131,
+      252
+    ],
+    "with_summary_Advanced": [
+      157,
+      117
+    ],
+    "without_summary_correctness": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      0,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 157.0,
+    "without_summary_media_time": 156.0,
+    "with_summary_mean_time": 176.5,
+    "without_summary_mean_time": 209.66666666666666,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 0.6666666666666666,
+    "task_group": "taskB"
+  },
+  "15": {
+    "query_index": 15,
+    "query": "Stop a Runnable submitted to ExecutorService",
+    "query_type": "multi_top10",
+    "ground_truth_classes": [
+      "java.util.concurrent.ThreadPoolExecutor",
+      "java.util.concurrent.CompletableFuture",
+      "java.util.concurrent.ScheduledThreadPoolExecutor",
+      "java.util.concurrent.ExecutorService",
+      "java.util.concurrent.Future"
+    ],
+    "without_summary_time_list": [
+      76,
+      310,
+      233,
+      338,
+      332,
+      145
+    ],
+    "with_summary_time_list": [
+      158,
+      95,
+      145,
+      71,
+      123,
+      204
+    ],
+    "without_summary_beginner": [
+      76,
+      145
+    ],
+    "without_summary_Interm": [
+      310,
+      338
+    ],
+    "without_summary_Advanced": [
+      233,
+      332
+    ],
+    "with_summary_beginner": [
+      71,
+      204
+    ],
+    "with_summary_Interm": [
+      95,
+      145
+    ],
+    "with_summary_Advanced": [
+      158,
+      123
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 134.0,
+    "without_summary_media_time": 271.5,
+    "with_summary_mean_time": 132.66666666666666,
+    "without_summary_mean_time": 239.0,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 0.8333333333333334,
+    "task_group": "taskA"
+  },
+  "16": {
+    "query_index": 16,
+    "query": "Preferred Java way to ping an HTTP URL for availability ",
+    "query_type": "multi_top10",
+    "ground_truth_classes": [
+      "java.net.InetAddress",
+      "java.net.HttpURLConnection",
+      "java.io.OutputStream",
+      "javax.net.ssl.HttpsURLConnection",
+      "java.net.HttpsURLConnection",
+      "java.net.URLConnection",
+      "java.net.URLStreamHandler",
+      "java.io.InputStream"
+    ],
+    "without_summary_time_list": [
+      172,
+      212,
+      144,
+      368,
+      298,
+      160
+    ],
+    "with_summary_time_list": [
+      203,
+      197,
+      197,
+      140,
+      146,
+      239
+    ],
+    "without_summary_beginner": [
+      172,
+      160
+    ],
+    "without_summary_Interm": [
+      212,
+      368
+    ],
+    "without_summary_Advanced": [
+      144,
+      298
+    ],
+    "with_summary_beginner": [
+      140,
+      239
+    ],
+    "with_summary_Interm": [
+      197,
+      197
+    ],
+    "with_summary_Advanced": [
+      203,
+      146
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 197.0,
+    "without_summary_media_time": 192.0,
+    "with_summary_mean_time": 187.0,
+    "without_summary_mean_time": 225.66666666666666,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 0.8333333333333334,
+    "task_group": "taskB"
+  },
+  "17": {
+    "query_index": 17,
+    "query": "How to make ImageIO read from InputStream :Java",
+    "query_type": "multi_one_top10",
+    "ground_truth_classes": [
+      "javax.imageio.ImageIO",
+      "java.io.InputStreamReader",
+      "java.io.InputStream",
+      "java.lang.Class"
+    ],
+    "without_summary_time_list": [
+      145,
+      148,
+      199,
+      128,
+      78,
+      65
+    ],
+    "with_summary_time_list": [
+      30,
+      86,
+      59,
+      138,
+      43,
+      190
+    ],
+    "without_summary_beginner": [
+      145,
+      65
+    ],
+    "without_summary_Interm": [
+      148,
+      128
+    ],
+    "without_summary_Advanced": [
+      199,
+      78
+    ],
+    "with_summary_beginner": [
+      138,
+      190
+    ],
+    "with_summary_Interm": [
+      86,
+      59
+    ],
+    "with_summary_Advanced": [
+      30,
+      43
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 72.5,
+    "without_summary_media_time": 136.5,
+    "with_summary_mean_time": 91.0,
+    "without_summary_mean_time": 127.16666666666667,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskA"
+  },
+  "18": {
+    "query_index": 18,
+    "query": "How do I print a double value without scientific notation using Java?",
+    "query_type": "multi_one_top10",
+    "ground_truth_classes": [
+      "java.math.BigDecimal",
+      "java.text.DecimalFormat",
+      "java.lang.Double",
+      "java.io.StringBuffer",
+      "java.util.Formatter"
+    ],
+    "without_summary_time_list": [
+      140,
+      162,
+      120,
+      180,
+      152,
+      114
+    ],
+    "with_summary_time_list": [
+      255,
+      86,
+      128,
+      112,
+      166,
+      168
+    ],
+    "without_summary_beginner": [
+      140,
+      114
+    ],
+    "without_summary_Interm": [
+      162,
+      180
+    ],
+    "without_summary_Advanced": [
+      120,
+      152
+    ],
+    "with_summary_beginner": [
+      112,
+      168
+    ],
+    "with_summary_Interm": [
+      86,
+      128
+    ],
+    "with_summary_Advanced": [
+      255,
+      166
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 147.0,
+    "without_summary_media_time": 146.0,
+    "with_summary_mean_time": 152.5,
+    "without_summary_mean_time": 144.66666666666666,
+    "with_summary_mean_class_correctness": 1.0,
+    "without_summary_mean_class_correctness": 1.0,
+    "task_group": "taskB"
+  },
+  "19": {
+    "query_index": 19,
+    "query": "Varargs method modifies caller's array instead of its own copy?",
+    "query_type": "multi_all_not_top10",
+    "ground_truth_classes": [
+      "java.util.Arrays",
+      "java.lang.System"
+    ],
+    "without_summary_time_list": [
+      485,
+      228,
+      180,
+      252,
+      27,
+      156
+    ],
+    "with_summary_time_list": [
+      187,
+      136,
+      47,
+      80,
+      131,
+      226
+    ],
+    "without_summary_beginner": [
+      485,
+      156
+    ],
+    "without_summary_Interm": [
+      228,
+      252
+    ],
+    "without_summary_Advanced": [
+      180,
+      27
+    ],
+    "with_summary_beginner": [
+      80,
+      226
+    ],
+    "with_summary_Interm": [
+      136,
+      47
+    ],
+    "with_summary_Advanced": [
+      187,
+      131
+    ],
+    "without_summary_correctness": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "with_summary_correctness": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "without_summary_beginner_correctness": [
+      0,
+      0
+    ],
+    "without_summary_Interm_correctness": [
+      0,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      0,
+      0
+    ],
+    "with_summary_beginner_correctness": [
+      0,
+      0
+    ],
+    "with_summary_Interm_correctness": [
+      0,
+      0
+    ],
+    "with_summary_Advanced_correctness": [
+      0,
+      0
+    ],
+    "with_summary_media_time": 133.5,
+    "without_summary_media_time": 204.0,
+    "with_summary_mean_time": 134.5,
+    "without_summary_mean_time": 221.33333333333334,
+    "with_summary_mean_class_correctness": 0.0,
+    "without_summary_mean_class_correctness": 0.0,
+    "task_group": "taskA"
+  },
+  "20": {
+    "query_index": 20,
+    "query": "How to hide cursor in a Swing application?",
+    "query_type": "multi_all_not_top10",
+    "ground_truth_classes": [
+      "java.awt.Window.JFrame",
+      "javax.swing.JFrame",
+      "java.awt.Component",
+      "java.awt.Toolkit",
+      "java.awt.Frame",
+      "javax.swing.JComponent",
+      "java.awt.Cursor",
+      "java.awt.Toolkit"
+    ],
+    "without_summary_time_list": [
+      334,
+      212,
+      135,
+      307,
+      220,
+      280
+    ],
+    "with_summary_time_list": [
+      174,
+      189,
+      238,
+      174,
+      321,
+      149
+    ],
+    "without_summary_beginner": [
+      334,
+      280
+    ],
+    "without_summary_Interm": [
+      212,
+      307
+    ],
+    "without_summary_Advanced": [
+      135,
+      220
+    ],
+    "with_summary_beginner": [
+      174,
+      149
+    ],
+    "with_summary_Interm": [
+      189,
+      238
+    ],
+    "with_summary_Advanced": [
+      174,
+      321
+    ],
+    "without_summary_correctness": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "with_summary_correctness": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "without_summary_beginner_correctness": [
+      1,
+      1
+    ],
+    "without_summary_Interm_correctness": [
+      1,
+      0
+    ],
+    "without_summary_Advanced_correctness": [
+      1,
+      0
+    ],
+    "with_summary_beginner_correctness": [
+      1,
+      0
+    ],
+    "with_summary_Interm_correctness": [
+      1,
+      1
+    ],
+    "with_summary_Advanced_correctness": [
+      1,
+      1
+    ],
+    "with_summary_media_time": 181.5,
+    "without_summary_media_time": 250.0,
+    "with_summary_mean_time": 207.5,
+    "without_summary_mean_time": 248.0,
+    "with_summary_mean_class_correctness": 0.8333333333333334,
+    "without_summary_mean_class_correctness": 0.6666666666666666,
+    "task_group": "taskB"
+  }
+}

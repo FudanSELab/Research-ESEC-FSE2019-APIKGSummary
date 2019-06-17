@@ -1,0 +1,322 @@
+[
+  {
+    "query": "How can I read input from the console using the Scanner class in Java?",
+    "search_way": "biker",
+    "class": [
+      "java.util.Scanner",
+      "java.io.Console",
+      "java.io.BufferedReader",
+      "org.omg.CORBA.DataInputStream",
+      "org.omg.CORBA_2_3.portable.InputStream",
+      "java.io.FileInputStream",
+      "java.io.InputStreamReader",
+      "java.lang.String",
+      "java.io.DataInputStream",
+      "java.io.Reader"
+    ]
+  },
+  {
+    "query": "How to wait for all threads to finish, using ExecutorService?",
+    "search_way": "biker",
+    "class": [
+      "java.util.concurrent.ExecutorService",
+      "java.util.concurrent.ThreadPoolExecutor",
+      "java.lang.Thread",
+      "java.util.concurrent.ForkJoinPool",
+      "java.util.concurrent.Executors",
+      "java.util.concurrent.CountDownLatch",
+      "java.util.concurrent.Future",
+      "java.util.concurrent.ForkJoinTask",
+      "java.util.concurrent.CyclicBarrier",
+      "java.util.concurrent.ScheduledThreadPoolExecutor"
+    ]
+  },
+  {
+    "query": "Listing only files in directory",
+    "search_way": "biker",
+    "class": [
+      "java.nio.file.FileVisitor",
+      "java.io.File",
+      "java.nio.file.Files",
+      "java.io.FilenameFilter",
+      "java.nio.file.Path",
+      "java.nio.file.attribute.BasicFileAttributes",
+      "java.net.JarURLConnection",
+      "java.util.zip.ZipFile",
+      "java.util.List",
+      "java.util.ArrayList"
+    ]
+  },
+  {
+    "query": "Is there a way to instantiate a class by name in Java?",
+    "search_way": "biker",
+    "class": [
+      "java.lang.ClassLoader",
+      "java.lang.Class",
+      "java.lang.reflect.Constructor",
+      "java.lang.reflect.Field",
+      "org.omg.CORBA.Object",
+      "java.lang.reflect.Method",
+      "java.lang.Thread",
+      "java.lang.Enum",
+      "java.awt.Toolkit",
+      "java.lang.reflect.ParameterizedType"
+    ]
+  },
+  {
+    "query": "How do I properly load a BufferedImage in java?",
+    "search_way": "biker",
+    "class": [
+      "java.awt.image.BufferedImage",
+      "javax.swing.ImageIcon",
+      "java.awt.image.WritableRaster",
+      "java.awt.image.ColorConvertOp",
+      "javax.imageio.ImageIO",
+      "java.awt.image.SampleModel",
+      "java.awt.image.ColorModel",
+      "java.awt.image.AffineTransformOp",
+      "java.awt.Image",
+      "java.awt.Graphics2D"
+    ]
+  },
+  {
+    "query": "Avoiding PermGen out of memory and GC overhead limit exceeded",
+    "search_way": "biker",
+    "class": [
+      "java.lang.StringBuilder",
+      "java.lang.StringBuffer",
+      "java.util.ArrayList",
+      "java.lang.System",
+      "java.nio.ByteBuffer",
+      "java.util.concurrent.ThreadPoolExecutor",
+      "java.util.Vector",
+      "java.lang.ref.SoftReference",
+      "java.lang.String",
+      "java.util.zip.Deflater"
+    ]
+  },
+  {
+    "query": "How do I Click a JButton without the user Clicking it?",
+    "search_way": "biker",
+    "class": [
+      "javax.swing.JMenu",
+      "java.awt.event.MouseListener",
+      "javax.swing.JButton",
+      "java.awt.event.MouseAdapter",
+      "javax.swing.JDialog",
+      "javax.swing.JOptionPane",
+      "javax.swing.JFrame",
+      "javax.swing.AbstractButton",
+      "javax.swing.JMenuItem",
+      "javax.swing.ButtonGroup"
+    ]
+  },
+  {
+    "query": "How to generate a random permutation in Java?",
+    "search_way": "biker",
+    "class": [
+      "java.util.Random",
+      "java.lang.Math",
+      "java.security.SecureRandom",
+      "java.util.stream.IntStream",
+      "java.util.UUID",
+      "java.util.ArrayList",
+      "java.util.Collections",
+      "java.math.BigInteger",
+      "java.util.List",
+      "java.lang.String"
+    ]
+  },
+  {
+    "query": "Stable timer independent of system time",
+    "search_way": "biker",
+    "class": [
+      "javax.swing.Timer",
+      "java.util.Timer",
+      "java.lang.Thread",
+      "java.util.TimerTask",
+      "javax.swing.SwingWorker",
+      "java.util.concurrent.ScheduledExecutorService",
+      "java.time.LocalDate",
+      "java.util.concurrent.ScheduledThreadPoolExecutor",
+      "java.lang.management.OperatingSystemMXBean",
+      "java.util.concurrent.ExecutorService"
+    ]
+  },
+  {
+    "query": "Is there any way to find os name using java?",
+    "search_way": "biker",
+    "class": [
+      "java.lang.Class",
+      "java.io.File",
+      "java.lang.String",
+      "java.lang.ProcessBuilder",
+      "java.lang.management.OperatingSystemMXBean",
+      "java.beans.Introspector",
+      "java.lang.ClassLoader",
+      "java.lang.Thread",
+      "java.lang.StackTraceElement",
+      "java.awt.Frame"
+    ]
+  },
+  {
+    "query": "Reading a plain text file in Java",
+    "search_way": "biker",
+    "class": [
+      "java.nio.file.Files",
+      "java.io.BufferedReader",
+      "java.io.InputStreamReader",
+      "javax.swing.text.JTextComponent",
+      "java.time.LocalTime",
+      "java.io.LineNumberReader",
+      "java.io.ObjectInputStream",
+      "org.omg.CORBA.DataInputStream",
+      "java.io.PrintWriter",
+      "javax.swing.JTextPane"
+    ]
+  },
+  {
+    "query": "Load Java Image inside package from a class in a different package",
+    "search_way": "biker",
+    "class": [
+      "java.lang.Class",
+      "java.lang.ClassLoader",
+      "javax.swing.ImageIcon",
+      "java.net.URLClassLoader",
+      "java.awt.image.BufferedImage",
+      "javax.imageio.ImageIO",
+      "javax.swing.text.html.ImageView",
+      "java.awt.Image",
+      "java.io.File",
+      "javax.swing.JLabel"
+    ]
+  },
+  {
+    "query": "Java - Draw a ruler (line with tick marks at 90 degree angle)",
+    "search_way": "biker",
+    "class": [
+      "java.awt.Graphics",
+      "javax.swing.JSlider",
+      "java.awt.Graphics2D",
+      "java.awt.geom.AffineTransform",
+      "java.lang.Math",
+      "java.awt.geom.Line2D",
+      "java.awt.geom.Path2D",
+      "java.awt.Polygon",
+      "java.awt.geom.Arc2D",
+      "java.awt.image.AffineTransformOp"
+    ]
+  },
+  {
+    "query": "How to make a symlink in Java when running in Linux?",
+    "search_way": "biker",
+    "class": [
+      "java.nio.file.Files",
+      "java.lang.ProcessBuilder",
+      "java.nio.file.FileVisitor",
+      "java.lang.Runtime",
+      "java.io.File",
+      "java.nio.file.spi.FileSystemProvider",
+      "java.nio.file.Path",
+      "java.nio.file.SimpleFileVisitor",
+      "java.lang.Process",
+      "java.nio.file.FileSystem"
+    ]
+  },
+  {
+    "query": "Stop a Runnable submitted to ExecutorService",
+    "search_way": "biker",
+    "class": [
+      "java.util.concurrent.ExecutorService",
+      "java.util.concurrent.ThreadPoolExecutor",
+      "java.util.concurrent.AbstractExecutorService",
+      "java.util.concurrent.CompletableFuture",
+      "javax.swing.Timer",
+      "java.util.concurrent.Future",
+      "java.lang.Runnable",
+      "java.lang.Thread",
+      "javax.swing.SwingWorker",
+      "java.util.concurrent.ScheduledThreadPoolExecutor"
+    ]
+  },
+  {
+    "query": "Preferred Java way to ping an HTTP URL for availability ",
+    "search_way": "biker",
+    "class": [
+      "javax.net.ssl.HttpsURLConnection",
+      "java.net.URL",
+      "java.net.URLConnection",
+      "javax.net.ssl.SSLSocketFactory",
+      "javax.net.ssl.SSLContext",
+      "java.net.HttpURLConnection",
+      "java.net.InetAddress",
+      "java.net.ServerSocket",
+      "java.net.URLStreamHandler",
+      "javax.xml.ws.Service"
+    ]
+  },
+  {
+    "query": "How to make ImageIO read from InputStream :Java",
+    "search_way": "biker",
+    "class": [
+      "java.io.InputStreamReader",
+      "java.io.ByteArrayInputStream",
+      "javax.imageio.ImageIO",
+      "java.io.FileInputStream",
+      "java.io.BufferedInputStream",
+      "java.io.BufferedReader",
+      "java.io.PipedOutputStream",
+      "java.io.PipedInputStream",
+      "java.net.URL",
+      "org.omg.CORBA.DataInputStream"
+    ]
+  },
+  {
+    "query": "How do I print a double value without scientific notation using Java?",
+    "search_way": "biker",
+    "class": [
+      "java.math.BigDecimal",
+      "java.lang.Double",
+      "java.text.DecimalFormat",
+      "java.math.BigInteger",
+      "java.lang.Float",
+      "java.lang.String",
+      "java.text.NumberFormat",
+      "java.lang.Math",
+      "java.lang.Long",
+      "java.lang.Number"
+    ]
+  },
+  {
+    "query": "Varargs method modifies caller's array instead of its own copy?",
+    "search_way": "biker",
+    "class": [
+      "java.lang.String",
+      "java.util.ArrayList",
+      "java.util.List",
+      "java.lang.Class",
+      "org.omg.CORBA.Object",
+      "java.util.LinkedList",
+      "java.util.Collection",
+      "java.sql.Array",
+      "java.sql.PreparedStatement",
+      "java.lang.reflect.Constructor"
+    ]
+  },
+  {
+    "query": "How to hide cursor in a Swing application?",
+    "search_way": "biker",
+    "class": [
+      "javax.swing.JFrame",
+      "javax.swing.JDialog",
+      "java.awt.Component",
+      "javax.swing.table.TableModel",
+      "javax.swing.JComponent",
+      "javax.swing.JComboBox",
+      "javax.swing.JTable",
+      "java.awt.event.MouseMotionListener",
+      "javax.swing.text.JTextComponent",
+      "java.awt.Frame"
+    ]
+  }
+]
