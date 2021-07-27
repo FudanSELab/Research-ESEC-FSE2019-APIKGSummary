@@ -1,5 +1,7 @@
 ## Replication Package For Paper: Generating Query-specific Class API Summaries
 
+### Code
+We refactor the code of this project, which could be found on [this](https://github.com/FudanSELab/APIKG-Summary).
 ### Summary Example:
 Here is the summary example in Figure 1 from Paper, which explains how the summary look like:
 ![summary_example](./img/classSummaryExample.jpg)
